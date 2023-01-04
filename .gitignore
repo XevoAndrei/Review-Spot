@@ -1,7 +1,3 @@
 
-build/classes/reviewspt/SPGMenu.form
-build/classes/reviewspt/SPGMenu.class
-build/classes/reviewspt/SPGMenu$4.class
-build/classes/reviewspt/SPGMenu$3.class
-build/classes/reviewspt/SPGMenu$2.class
-build/classes/reviewspt/SPGMenu$1.class
+build/*
+*.class
