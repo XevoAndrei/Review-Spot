@@ -141,7 +141,7 @@ public class HomeScreen extends javax.swing.JFrame {
         );
 
         logo.setBackground(new java.awt.Color(0, 0, 0));
-        logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reviewspt/REVIEW SPOT.png"))); // NOI18N
+        logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/REVIEW SPOT.png"))); // NOI18N
         logo.setText("LOGO");
 
         jMenuBar3.setBackground(new java.awt.Color(91, 108, 98));
