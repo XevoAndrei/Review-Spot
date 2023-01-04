@@ -1,6 +1,6 @@
 package reviewspt;
 
-public class Admin extends Moderator {
+public class Admin {
     
     
     

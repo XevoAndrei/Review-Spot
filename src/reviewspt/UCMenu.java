@@ -142,7 +142,7 @@ public class UCMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_BACKActionPerformed
 
     double ParseDouble(String strNumber) {
-   if (strNumber != null && strNumber.length() > 0) {
+    if (strNumber != null && strNumber.length() > 0) {
        try {
           return Double.parseDouble(strNumber);
        } catch(Exception e) {
