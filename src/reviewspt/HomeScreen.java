@@ -127,8 +127,8 @@ public class HomeScreen extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
-                .addGap(41, 41, 41)
-                .addComponent(SPGButton, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(SPGButton, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(MPGButton, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -141,7 +141,6 @@ public class HomeScreen extends javax.swing.JFrame {
         );
 
         logo.setBackground(new java.awt.Color(0, 0, 0));
-        logo.setIcon(new javax.swing.ImageIcon("C:\\Users\\Buğra Yiğit\\Downloads\\REVIEW SPOT.png")); // NOI18N
         logo.setText("LOGO");
 
         jMenuBar3.setBackground(new java.awt.Color(91, 108, 98));
