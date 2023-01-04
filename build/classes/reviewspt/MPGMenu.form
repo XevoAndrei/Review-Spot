@@ -369,7 +369,7 @@
             <Component class="javax.swing.JLabel" name="jLabel4">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\Bu&#x11f;ra Yi&#x11f;it\Downloads\warthunderlogo.png"/>
+                  <Image iconType="3" name="/warthunderlogo.png"/>
                 </Property>
               </Properties>
             </Component>

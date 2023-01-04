@@ -158,7 +158,7 @@ public class MPGMenu extends javax.swing.JFrame {
 
         jPanel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\Buğra Yiğit\\Downloads\\warthunderlogo.png")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/warthunderlogo.png"))); // NOI18N
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
