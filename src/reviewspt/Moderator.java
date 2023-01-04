@@ -1,5 +1,7 @@
 package reviewspt;
+import java.io.*;
 
-public class Moderator {
+public class Moderator implements Serializable {
+    
     
 }

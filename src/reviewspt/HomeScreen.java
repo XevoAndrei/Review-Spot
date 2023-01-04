@@ -24,8 +24,6 @@ public class HomeScreen extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         logo = new javax.swing.JLabel();
         jMenuBar3 = new javax.swing.JMenuBar();
-        jMenu3 = new javax.swing.JMenu();
-        loginScreen = new javax.swing.JMenuItem();
 
         jMenuItem1.setText("jMenuItem1");
 
@@ -146,25 +144,6 @@ public class HomeScreen extends javax.swing.JFrame {
 
         jMenuBar3.setBackground(new java.awt.Color(91, 108, 98));
         jMenuBar3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-
-        jMenu3.setBackground(new java.awt.Color(0, 0, 0));
-        jMenu3.setText("Admin Panel");
-        jMenu3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenu3ActionPerformed(evt);
-            }
-        });
-
-        loginScreen.setText("Login");
-        loginScreen.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                loginScreenActionPerformed(evt);
-            }
-        });
-        jMenu3.add(loginScreen);
-
-        jMenuBar3.add(jMenu3);
-
         setJMenuBar(jMenuBar3);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -219,17 +198,6 @@ public class HomeScreen extends javax.swing.JFrame {
         setVisible(false);
     }//GEN-LAST:event_IGButtonActionPerformed
 
-    private void jMenu3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenu3ActionPerformed
-
-    private void loginScreenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginScreenActionPerformed
-        LoginScreen m6 = new LoginScreen();
-        m6.setVisible(true);;
-        setVisible(false);
-        
-    }//GEN-LAST:event_loginScreenActionPerformed
-
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -273,12 +241,10 @@ public class HomeScreen extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JMenuBar jMenuBar3;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JMenuItem loginScreen;
     private javax.swing.JLabel logo;
     // End of variables declaration//GEN-END:variables
 }
