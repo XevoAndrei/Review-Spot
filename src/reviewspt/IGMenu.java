@@ -37,6 +37,7 @@ public class IGMenu extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Indie Game Of Our Choice!");
+        setPreferredSize(new java.awt.Dimension(750, 540));
 
         jPanel1.setBackground(new java.awt.Color(51, 0, 51));
 
