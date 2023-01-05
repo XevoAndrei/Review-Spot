@@ -84,16 +84,21 @@ public class LoginScreen extends javax.swing.JFrame {
         
         if(usernametf.getText().isEmpty()) {
         JOptionPane.showMessageDialog(this, "Please enter your username!");
-        
     }
         else if(passwordtf.getText().isEmpty()) {
         JOptionPane.showMessageDialog(this, "Please enter your password!");
-        
         }
         else {
-        AdminScreen as = new AdminScreen();
-        as.setVisible(true);
-        setVisible(false);
+            
+            if(passwordtf.getText().equals("123") && usernametf.getText().equals("kerem") || 
+                    passwordtf.getText().equals("456") && usernametf.getText().equals("bugra")) {
+                AdminScreen as = new AdminScreen();
+                as.setVisible(true);
+                setVisible(false);
+            }
+            else {
+                JOptionPane.showMessageDialog(this, "Your username or password is wrong.");
+            }
         }
     }//GEN-LAST:event_loginButtonActionPerformed
 
