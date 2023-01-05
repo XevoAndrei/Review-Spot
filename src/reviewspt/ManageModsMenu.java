@@ -21,8 +21,7 @@ public class ManageModsMenu extends javax.swing.JFrame {
         
         String [] rolesArray = new String[roles.size()];
         for (int i=0; i<roles.size(); i++){
-            rolesArray[i] = roles.get(i).getRoleName() + ", (Authority: " + 
-                    formatter.format(roles.get(i).getAuthority()) + ")";
+            rolesArray[i] = roles.get(i).getRoleName();
         }
         cbModeratorRole.setModel(new javax.swing.DefaultComboBoxModel<>(rolesArray));
         
@@ -36,7 +35,7 @@ public class ManageModsMenu extends javax.swing.JFrame {
     
     public void populateArrayList(){
         try {
-            FileInputStream fileRole = new FileInputStream("Roles.dat");
+            FileInputStream fileRole = new FileInputStream("Role.dat");
             ObjectInputStream inputFileRole = new ObjectInputStream(fileRole);
             
             boolean endOfFile = false;
