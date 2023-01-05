@@ -1,4 +1,3 @@
-
 package reviewspt;
 import javax.swing.*;
 import java.util.*;
@@ -103,6 +102,7 @@ public class ManageModsMenu extends javax.swing.JFrame {
         cbModeratorRole = new javax.swing.JComboBox<>();
         saveButton = new javax.swing.JButton();
         removeButton = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -131,6 +131,18 @@ public class ManageModsMenu extends javax.swing.JFrame {
         });
 
         removeButton.setText("REMOVE");
+        removeButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                removeButtonActionPerformed(evt);
+            }
+        });
+
+        jButton1.setText("RETURN");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -162,6 +174,10 @@ public class ManageModsMenu extends javax.swing.JFrame {
                         .addGap(26, 26, 26)
                         .addComponent(removeButton)))
                 .addContainerGap(92, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jButton1)
+                .addGap(205, 205, 205))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -184,7 +200,9 @@ public class ManageModsMenu extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(saveButton)
                     .addComponent(removeButton))
-                .addGap(43, 43, 43))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton1)
+                .addGap(14, 14, 14))
         );
 
         pack();
@@ -207,8 +225,36 @@ public class ManageModsMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_cbModeratorActionPerformed
 
     private void saveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveButtonActionPerformed
-        // TODO add your handling code here:
+        if (this.tfModeratorUsername.getText().isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Please enter all the details");
+        } else {
+            int selectedIndexEmp = cbModerator.getSelectedIndex();
+            Moderators.get(selectedIndexEmp).setUsername(tfModeratorUsername.getText().trim());
+            
+            Role role = roles.get(cbModeratorRole.getSelectedIndex());
+            Moderators.get(selectedIndexEmp).setRole(role);
+            
+            saveModeratorsToFile();
+            ManageModsMenu mmm = new ManageModsMenu();
+            mmm.setVisible(true);
+            setVisible(false);
+        }
     }//GEN-LAST:event_saveButtonActionPerformed
+
+    private void removeButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_removeButtonActionPerformed
+        int selectedIndexEmp = cbModerator.getSelectedIndex();
+        Moderators.remove(selectedIndexEmp);
+        saveModeratorsToFile();
+        ManageModsMenu mmm = new ManageModsMenu();
+        mmm.setVisible(true);
+        setVisible(false);
+    }//GEN-LAST:event_removeButtonActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        AdminScreen as = new AdminScreen();
+        as.setVisible(true);
+        setVisible(false);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -248,6 +294,7 @@ public class ManageModsMenu extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> cbModerator;
     private javax.swing.JComboBox<String> cbModeratorRole;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
