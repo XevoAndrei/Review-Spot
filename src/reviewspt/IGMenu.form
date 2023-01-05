@@ -185,8 +185,12 @@
                       <Color blue="99" green="0" red="99" type="rgb"/>
                     </Property>
                     <Property name="columns" type="int" value="20"/>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Times New Roman" size="20" style="0"/>
+                    </Property>
+                    <Property name="lineWrap" type="boolean" value="true"/>
                     <Property name="rows" type="int" value="5"/>
-                    <Property name="text" type="java.lang.String" value="A Turn-based Strategy game in a futuristic global cold&#xa; war from the award-winning creators of Out There.&#xa; Recruit a squad of special agents and run your intel&#xa; agency to secure the control of the singularity."/>
+                    <Property name="text" type="java.lang.String" value="A Turn-based Strategy game in a futuristic global coldwar from the &#xa;award-winning creators of Out &#xa;There. Recruit a squad of special&#xa;agents and run your intel agency to secure the control of the singularity."/>
                     <Property name="caretColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>

@@ -70,8 +70,10 @@ public class IGMenu extends javax.swing.JFrame {
 
         jTextArea1.setBackground(new java.awt.Color(153, 0, 153));
         jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
+        jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
-        jTextArea1.setText("A Turn-based Strategy game in a futuristic global cold\n war from the award-winning creators of Out There.\n Recruit a squad of special agents and run your intel\n agency to secure the control of the singularity.");
+        jTextArea1.setText("A Turn-based Strategy game in a futuristic global coldwar from the \naward-winning creators of Out \nThere. Recruit a squad of special\nagents and run your intel agency to secure the control of the singularity.");
         jTextArea1.setCaretColor(new java.awt.Color(255, 255, 255));
         jScrollPane1.setViewportView(jTextArea1);
 
