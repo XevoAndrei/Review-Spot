@@ -147,12 +147,12 @@ public class UCMenu extends javax.swing.JFrame {
           return Double.parseDouble(strNumber);
        } catch(Exception e) {
           JOptionPane.showMessageDialog(this, "Please enter a value!");
-          return -1;
+          return 0;
        }
    }
    else {
        JOptionPane.showMessageDialog(this, "Please enter a value!");
-       return -1;
+       return 0;
    } 
        
 } 

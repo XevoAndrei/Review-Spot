@@ -22,11 +22,11 @@ public class HomeScreen extends javax.swing.JFrame {
         HButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         logo = new javax.swing.JLabel();
         jMenuBar3 = new javax.swing.JMenuBar();
         File = new javax.swing.JMenu();
         loginScreen = new javax.swing.JMenuItem();
-        exitMenu = new javax.swing.JMenu();
 
         jMenuItem1.setText("jMenuItem1");
 
@@ -91,26 +91,22 @@ public class HomeScreen extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Courier New", 3, 30)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 30)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("REVIEW SPOT");
 
-        jLabel2.setFont(new java.awt.Font("Consolas", 3, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 3, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Gaming Community");
+
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("Entertaintment App");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(81, 81, 81)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel2)
-                        .addGap(43, 43, 43)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(0, 47, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -120,15 +116,28 @@ public class HomeScreen extends javax.swing.JFrame {
                     .addComponent(MPGButton, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(SPGButton, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(46, 46, 46))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel3)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addGap(83, 83, 83)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 205, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addGap(117, 117, 117)
+                            .addComponent(jLabel2))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(49, 49, 49)
+                .addContainerGap()
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
-                .addGap(38, 38, 38)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel3)
+                .addGap(59, 59, 59)
                 .addComponent(SPGButton, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(MPGButton, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -143,9 +152,7 @@ public class HomeScreen extends javax.swing.JFrame {
 
         logo.setBackground(new java.awt.Color(0, 0, 0));
         logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/REVIEW SPOT.png"))); // NOI18N
-        logo.setText("LOGO");
 
-        jMenuBar3.setBackground(new java.awt.Color(91, 108, 98));
         jMenuBar3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         File.setBackground(new java.awt.Color(0, 0, 0));
@@ -163,9 +170,6 @@ public class HomeScreen extends javax.swing.JFrame {
             }
         });
         File.add(loginScreen);
-
-        exitMenu.setText("EXIT");
-        File.add(exitMenu);
 
         jMenuBar3.add(File);
 
@@ -274,9 +278,9 @@ public class HomeScreen extends javax.swing.JFrame {
     private javax.swing.JButton MPGButton;
     private javax.swing.JButton SPGButton;
     private javax.swing.JButton UCButton;
-    private javax.swing.JMenu exitMenu;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar2;
