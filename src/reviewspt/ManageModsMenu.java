@@ -124,6 +124,11 @@ public class ManageModsMenu extends javax.swing.JFrame {
         cbModeratorRole.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         saveButton.setText("SAVE");
+        saveButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                saveButtonActionPerformed(evt);
+            }
+        });
 
         removeButton.setText("REMOVE");
 
@@ -199,6 +204,10 @@ public class ManageModsMenu extends javax.swing.JFrame {
         }
         cbModeratorRole.setSelectedIndex(empRoleIndex);
     }//GEN-LAST:event_cbModeratorActionPerformed
+
+    private void saveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_saveButtonActionPerformed
 
     /**
      * @param args the command line arguments

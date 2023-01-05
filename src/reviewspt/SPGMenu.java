@@ -81,6 +81,11 @@ public class SPGMenu extends javax.swing.JFrame {
         });
 
         jButton2.setText("The Forest");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setText("Cyberpunk 2077");
         jButton3.setToolTipText("");
@@ -311,6 +316,12 @@ public class SPGMenu extends javax.swing.JFrame {
         hs.setVisible(true);
         setVisible(false);
     }//GEN-LAST:event_BACKActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        SPG1 spg = new SPG1();
+        spg.setVisible(true);
+        setVisible(false);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
