@@ -25,8 +25,10 @@ public class HomeScreen extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         logo = new javax.swing.JLabel();
         jMenuBar3 = new javax.swing.JMenuBar();
-        File = new javax.swing.JMenu();
+        AdminPanel = new javax.swing.JMenu();
         loginScreen = new javax.swing.JMenuItem();
+        ModPanel = new javax.swing.JMenu();
+        loginScreen1 = new javax.swing.JMenuItem();
 
         jMenuItem1.setText("jMenuItem1");
 
@@ -155,11 +157,11 @@ public class HomeScreen extends javax.swing.JFrame {
 
         jMenuBar3.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        File.setBackground(new java.awt.Color(0, 0, 0));
-        File.setText("Admin Panel");
-        File.addActionListener(new java.awt.event.ActionListener() {
+        AdminPanel.setBackground(new java.awt.Color(0, 0, 0));
+        AdminPanel.setText("Admin Panel");
+        AdminPanel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                FileActionPerformed(evt);
+                AdminPanelActionPerformed(evt);
             }
         });
 
@@ -169,9 +171,21 @@ public class HomeScreen extends javax.swing.JFrame {
                 loginScreenActionPerformed(evt);
             }
         });
-        File.add(loginScreen);
+        AdminPanel.add(loginScreen);
 
-        jMenuBar3.add(File);
+        jMenuBar3.add(AdminPanel);
+
+        ModPanel.setText("Moderator Panel");
+
+        loginScreen1.setText("Login");
+        loginScreen1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                loginScreen1ActionPerformed(evt);
+            }
+        });
+        ModPanel.add(loginScreen1);
+
+        jMenuBar3.add(ModPanel);
 
         setJMenuBar(jMenuBar3);
 
@@ -227,9 +241,9 @@ public class HomeScreen extends javax.swing.JFrame {
         setVisible(false);
     }//GEN-LAST:event_IGButtonActionPerformed
 
-    private void FileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FileActionPerformed
+    private void AdminPanelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AdminPanelActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_FileActionPerformed
+    }//GEN-LAST:event_AdminPanelActionPerformed
 
     private void loginScreenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginScreenActionPerformed
         LoginScreen m6 = new LoginScreen();
@@ -237,6 +251,12 @@ public class HomeScreen extends javax.swing.JFrame {
         setVisible(false);
 
     }//GEN-LAST:event_loginScreenActionPerformed
+
+    private void loginScreen1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginScreen1ActionPerformed
+        ModLoginScreen mls = new ModLoginScreen();
+        mls.setVisible(true);
+        setVisible(false);
+    }//GEN-LAST:event_loginScreen1ActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -272,10 +292,11 @@ public class HomeScreen extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu File;
+    private javax.swing.JMenu AdminPanel;
     private javax.swing.JButton HButton;
     private javax.swing.JButton IGButton;
     private javax.swing.JButton MPGButton;
+    private javax.swing.JMenu ModPanel;
     private javax.swing.JButton SPGButton;
     private javax.swing.JButton UCButton;
     private javax.swing.JLabel jLabel1;
@@ -288,6 +309,7 @@ public class HomeScreen extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JMenuItem loginScreen;
+    private javax.swing.JMenuItem loginScreen1;
     private javax.swing.JLabel logo;
     // End of variables declaration//GEN-END:variables
 }

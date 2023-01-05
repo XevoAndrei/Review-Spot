@@ -29,35 +29,29 @@ public class AdminScreen extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         returnButton = new javax.swing.JButton();
-        viewStaffButton = new javax.swing.JButton();
         addNewModsButton = new javax.swing.JButton();
         manageModsButton = new javax.swing.JButton();
         addNewRoleButton = new javax.swing.JButton();
+        addNewGameButton = new javax.swing.JButton();
+        manageGamesButton = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Admin Panel");
 
-        jPanel1.setBackground(new java.awt.Color(0, 0, 102));
+        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
+        jLabel2.setBackground(new java.awt.Color(204, 0, 0));
         jLabel2.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 0));
+        jLabel2.setForeground(new java.awt.Color(204, 0, 0));
         jLabel2.setText("Review Spot Admin Panel");
 
         returnButton.setText("RETURN");
         returnButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 returnButtonActionPerformed(evt);
-            }
-        });
-
-        viewStaffButton.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
-        viewStaffButton.setText("View Staff");
-        viewStaffButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                viewStaffButtonActionPerformed(evt);
             }
         });
 
@@ -85,40 +79,58 @@ public class AdminScreen extends javax.swing.JFrame {
             }
         });
 
+        addNewGameButton.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
+        addNewGameButton.setText("Add New Game");
+        addNewGameButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addNewGameButtonActionPerformed(evt);
+            }
+        });
+
+        manageGamesButton.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
+        manageGamesButton.setText("Manage Games");
+        manageGamesButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                manageGamesButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(viewStaffButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(addNewModsButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(manageModsButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(19, 19, 19)
-                        .addComponent(jLabel2))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(95, 95, 95)
-                        .addComponent(returnButton)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addComponent(addNewRoleButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel2)
+                .addGap(22, 22, 22))
+            .addComponent(addNewGameButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(94, 94, 94)
+                .addComponent(returnButton)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(manageGamesButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(30, 30, 30)
+                .addGap(31, 31, 31)
                 .addComponent(jLabel2)
-                .addGap(86, 86, 86)
-                .addComponent(viewStaffButton, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(40, 40, 40)
                 .addComponent(addNewModsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(addNewRoleButton, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(addNewGameButton, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(manageModsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(manageGamesButton, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 75, Short.MAX_VALUE)
                 .addComponent(returnButton)
-                .addGap(58, 58, 58))
+                .addContainerGap())
         );
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/REVIEW SPOT.png"))); // NOI18N
@@ -170,10 +182,6 @@ public class AdminScreen extends javax.swing.JFrame {
         setVisible(false);
     }//GEN-LAST:event_returnButtonActionPerformed
 
-    private void viewStaffButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewStaffButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_viewStaffButtonActionPerformed
-
     private void addNewModsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addNewModsButtonActionPerformed
         AddNewModsMenu anmm = new AddNewModsMenu();
         anmm.setVisible(true);
@@ -191,6 +199,14 @@ public class AdminScreen extends javax.swing.JFrame {
         anrm.setVisible(true);
         setVisible(false);
     }//GEN-LAST:event_addNewRoleButtonActionPerformed
+
+    private void addNewGameButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addNewGameButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_addNewGameButtonActionPerformed
+
+    private void manageGamesButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manageGamesButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_manageGamesButtonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -228,14 +244,15 @@ public class AdminScreen extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton addNewGameButton;
     private javax.swing.JButton addNewModsButton;
     private javax.swing.JButton addNewRoleButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JButton manageGamesButton;
     private javax.swing.JButton manageModsButton;
     private javax.swing.JButton returnButton;
-    private javax.swing.JButton viewStaffButton;
     // End of variables declaration//GEN-END:variables
 }
