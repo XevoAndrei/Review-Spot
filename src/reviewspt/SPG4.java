@@ -47,7 +47,7 @@ public class SPG4 extends javax.swing.JFrame {
         });
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 36)); // NOI18N
-        jLabel1.setText("METAL GEAR");
+        jLabel1.setText("MGS V");
 
         jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
@@ -99,7 +99,7 @@ public class SPG4 extends javax.swing.JFrame {
                         .addContainerGap())
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jLabel1)
-                        .addGap(54, 54, 54))))
+                        .addGap(113, 113, 113))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

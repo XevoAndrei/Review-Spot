@@ -70,7 +70,7 @@ public class SPG1 extends javax.swing.JFrame {
         jLabel5.setText("jLabel3");
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel6.setText("Price : 19.99$");
+        jLabel6.setText("Price : Steam & PS4 - 19.99$");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

@@ -164,7 +164,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="24" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Price : 19.99$"/>
+        <Property name="text" type="java.lang.String" value="Price : Steam &amp; PS4 - 19.99$"/>
       </Properties>
     </Component>
   </SubComponents>
