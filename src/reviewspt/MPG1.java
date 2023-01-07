@@ -40,7 +40,7 @@ public class MPG1 extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1350, 750));
+        setPreferredSize(new java.awt.Dimension(1380, 800));
         setResizable(false);
 
         jButton1.setText("BACK");
