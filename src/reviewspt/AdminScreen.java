@@ -30,20 +30,33 @@ public class AdminScreen extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(0, 0, 0));
         jPanel2.setForeground(new java.awt.Color(51, 102, 255));
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/1.png"))); // NOI18N
-        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-30, 20, 460, 340));
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 460, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 358, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(20, Short.MAX_VALUE))
+        );
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Review Spot Admin Panel");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 220, -1));
 
         returnButton.setBackground(new java.awt.Color(0, 0, 0));
         returnButton.setForeground(new java.awt.Color(255, 255, 255));
@@ -53,7 +66,6 @@ public class AdminScreen extends javax.swing.JFrame {
                 returnButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(returnButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 360, -1, -1));
 
         addNewModsButton.setBackground(new java.awt.Color(0, 0, 0));
         addNewModsButton.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
@@ -64,7 +76,6 @@ public class AdminScreen extends javax.swing.JFrame {
                 addNewModsButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(addNewModsButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 270, 40));
 
         manageModsButton.setBackground(new java.awt.Color(0, 0, 0));
         manageModsButton.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
@@ -75,7 +86,6 @@ public class AdminScreen extends javax.swing.JFrame {
                 manageModsButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(manageModsButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 270, 40));
 
         addNewRoleButton.setBackground(new java.awt.Color(0, 0, 0));
         addNewRoleButton.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
@@ -86,7 +96,6 @@ public class AdminScreen extends javax.swing.JFrame {
                 addNewRoleButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(addNewRoleButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 270, 40));
 
         addNewGameButton.setBackground(new java.awt.Color(0, 0, 0));
         addNewGameButton.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
@@ -97,7 +106,6 @@ public class AdminScreen extends javax.swing.JFrame {
                 addNewGameButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(addNewGameButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, 270, 40));
 
         manageGamesButton.setBackground(new java.awt.Color(0, 0, 0));
         manageGamesButton.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
@@ -108,7 +116,41 @@ public class AdminScreen extends javax.swing.JFrame {
                 manageGamesButtonActionPerformed(evt);
             }
         });
-        jPanel1.add(manageGamesButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 270, 40));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(addNewModsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(addNewRoleButton, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(addNewGameButton, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(manageModsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(manageGamesButton, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(100, 100, 100)
+                .addComponent(returnButton))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(19, 19, 19)
+                .addComponent(jLabel2)
+                .addGap(45, 45, 45)
+                .addComponent(addNewModsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(addNewRoleButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(addNewGameButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(manageModsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0)
+                .addComponent(manageGamesButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(70, 70, 70)
+                .addComponent(returnButton))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -122,7 +164,7 @@ public class AdminScreen extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 389, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
