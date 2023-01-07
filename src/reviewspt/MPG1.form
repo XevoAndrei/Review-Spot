@@ -4,7 +4,7 @@
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
     <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-      <Dimension value="[1327, 722]"/>
+      <Dimension value="[1350, 750]"/>
     </Property>
     <Property name="resizable" type="boolean" value="false"/>
   </Properties>
@@ -67,13 +67,6 @@
                   </Group>
               </Group>
           </Group>
-          <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="600" max="-2" attributes="0"/>
-                  <Component id="jLabel7" min="-2" pref="133" max="-2" attributes="0"/>
-                  <EmptySpace pref="600" max="32767" attributes="0"/>
-              </Group>
-          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -106,13 +99,6 @@
                       <Component id="jButton1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
-              </Group>
-          </Group>
-          <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
-                  <EmptySpace min="-2" pref="342" max="-2" attributes="0"/>
-                  <Component id="jLabel7" max="32767" attributes="0"/>
-                  <EmptySpace min="-2" pref="342" max="-2" attributes="0"/>
               </Group>
           </Group>
       </Group>
@@ -194,14 +180,6 @@
           <Font name="Segoe UI" size="18" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Standart Edition : 44.99$"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel7">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="18" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="PRICE : 29.99$"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel8">
