@@ -36,6 +36,7 @@ public class SPG4 extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jButton1.setText("BACK");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -52,7 +53,7 @@ public class SPG4 extends javax.swing.JFrame {
         jTextArea1.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
-        jTextArea1.setText("As Big Boss, the leader of a private military group The Diamond Dogs, you go behind enemy lines to carry out recon and assassination contracts, as well as infiltrate the hideouts of your enemies. These include world powers and military leaders, many of whom work in the shadows. The Phantom Pain mixes historical events from the 1980s with a pinch of James Bond villainy and an exciting dollop of sci-fi dressing. There are times when it feels grounded in reality, but there are also just as many moments when it goes off the deep-end to great effect. Impossible technology and super-human abilities accompany almost every beat of the story. These oddities surprise you and instill wonder in the crazy, mixed-up world that you're meant to save.");
+        jTextArea1.setText("The Metal Gear series has always delivered complex plots, with unexpected twists and revelations altering your perception of people and events you thought you understood. Though Metal Gear Solid V: The Phantom Pain continues this tradition, the majority of its plot focuses on the events at hand. Fans of the series will find their diligence rewarded in ways that newcomers can't begin to imagine, but such loyalty and knowledge isn't a prerequisite. Top-notch cinematography and voice acting echo--and at times exceed--contemporary standards for film and TV, carrying extraordinary characters into the realm of believability. Though you will cross a few elements in the world that illicit a chuckle, there's very little humor in The Phantom Pain's story; the dark themes and subject matter like disenfranchised youth being forced into combat call for a serious tone, after all. The gravity of the game's encounters leaves you on the edge of your seat, with a racing pulse.\n\nAs Big Boss, the leader of a private military group The Diamond Dogs, you go behind enemy lines to carry out recon and assassination contracts, as well as infiltrate the hideouts of your enemies. These include world powers and military leaders, many of whom work in the shadows. The Phantom Pain mixes historical events from the 1980s with a pinch of James Bond villainy and an exciting dollop of sci-fi dressing. There are times when it feels grounded in reality, but there are also just as many moments when it goes off the deep-end to great effect. Impossible technology and super-human abilities accompany almost every beat of the story. These oddities surprise you and instill wonder in the crazy, mixed-up world that you're meant to save.");
         jScrollPane1.setViewportView(jTextArea1);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/MetalGearSolid5Wallpaper.png"))); // NOI18N

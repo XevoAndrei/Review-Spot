@@ -3,6 +3,7 @@
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="resizable" type="boolean" value="false"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -116,7 +117,7 @@
             </Property>
             <Property name="lineWrap" type="boolean" value="true"/>
             <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="The Forest is a survival horror game in a very literal sense. It has all the &#xa;survival elements you&#x2019;d expect, such asgathering materials to construct your &#xa;base andcraft items, to managing vario-us stats &#xa;such as hunger, stamina, and even sanityBut, it&#x2019;s the horror aspect of The Forestthat truly separates it from other games within the survival genre.&#xa;&#xa;You play the unluckiest survival expert and father in the world, as your plane &#xa;crashes on a remote peninsula and your son is kidnapped by a mysterious red &#xa;figure. If that&#x2019;s not bad enough, once &#xa;you begin exploring your surroundings&#xa;and searching for your son, you&#x2019;ll soondiscover this place isn&#x2019;t so remote afterall.&#xa;&#xa;&#xa;&#xa;&#xa;&#xa;"/>
+            <Property name="text" type="java.lang.String" value="The broad premise of The Forest is far from unique. A plane crash lands on a seemingly deserted island, and you, a lone survivor, have to figure out a way to survive. It doesn&apos;t take long, however, until blood curdling screeches fill the night and glowing eyes appear in the distance. Once it sets in that your new home isn&apos;t as empty as it first appeared, The Forest evolves into a uniquely harrowing adventure that you won&apos;t soon forget.&#xa;&#xa;Cannibals inhabit the grassy fields and pristine lakes around you, watching your every move; they are the source of The Forest&apos;s ever-present tension. You might expect monsters like this to attack on sight, but their behavior is erratic. Sometimes they&apos;ll charge forward to unsettle you during daylight but stop just outside striking distance to simply stare in silence. Other times they might feign a retreat before leaping into nearby trees to quickly get behind you. The Forest&apos;s enemies aren&apos;t easy to predict, which makes each encounter thrilling.The breadth of enemy types is impressive too, and they can get surprisingly weird. As you explore the island more and dive into terrifying, pitch-black caverns, enemies transform into terrifying body-horror figures--amalgamations of appendages that bellow deep, disturbing howls. They&apos;re frightening to behold and even scarier to fight."/>
           </Properties>
         </Component>
       </SubComponents>

@@ -36,6 +36,7 @@ public class SPG5 extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jButton1.setText("BACK");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -52,7 +53,7 @@ public class SPG5 extends javax.swing.JFrame {
         jTextArea1.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
-        jTextArea1.setText("With the Empire attacking the Kingdom's of the North and the Wild Hunt, a cav-\nalcade of ghastly riders, breathing \ndown your neck, the only way to \nsurvive is to fight back. As Geralt of \nRivia, a master swordsman and monsterhunter, leave none of your enemies \nstanding. Explore a gigantic open worldslay beasts and decide the fates of \nwhole communities with your actions, \nall in a genuine next generation format.");
+        jTextArea1.setText("Reliving familiar frights can often make for a less-than-exciting horror experience. But with the remake of Resident Evil 2, Capcom shows respect for the original while also going to great lengths to give the macabre atmosphere and tense gameplay a noticeable upgrade. In doing so, this revamp of the classic survival horror game shows that the series can still offer a terrifying experience like no other.\n\nYou once again play as either Leon Kennedy or Claire Redfield. A viral outbreak has unleashed hordes of zombies and other grotesque monsters upon Raccoon City, leading to a series of dangerous and nightmare-inducing encounters for the two characters. While both protagonists' storylines have similar plots and take place in the same locations, there are different supporting characters and unique challenges in each that set the two playthroughs apart.In traditional Resident Evil fashion, you're tasked with surviving through the night and overcoming the nightmarish creatures and devious puzzles found throughout the infested streets of the city, the tight, dimly lit halls of the Police Station, and in the subterranean passages below. RE2 is a great mix of the understated survivalist approach from the original games and the tactile, reflex-oriented gameplay from more recent entries. It's very much a game about escalation; as your resources dwindle and the monsters become fearsome and more elaborate, the pressure is always mounting as the story progresses, and each moment feels just a bit more desperate than the last. Even the smallest of victories can feel like major wins in RE2, and you'll often find yourself onto the next struggle before you know it.\n\n");
         jScrollPane1.setViewportView(jTextArea1);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ResidentEvil2Wallpaper.jpg"))); // NOI18N

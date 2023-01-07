@@ -3,6 +3,7 @@
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="resizable" type="boolean" value="false"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -116,7 +117,7 @@
             </Property>
             <Property name="lineWrap" type="boolean" value="true"/>
             <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="With the Empire attacking the Kingdom&apos;s of the North and the Wild Hunt, a cav-&#xa;alcade of ghastly riders, breathing &#xa;down your neck, the only way to &#xa;survive is to fight back. As Geralt of &#xa;Rivia, a master swordsman and monsterhunter, leave none of your enemies &#xa;standing. Explore a gigantic open worldslay beasts and decide the fates of &#xa;whole communities with your actions, &#xa;all in a genuine next generation format."/>
+            <Property name="text" type="java.lang.String" value="Reliving familiar frights can often make for a less-than-exciting horror experience. But with the remake of Resident Evil 2, Capcom shows respect for the original while also going to great lengths to give the macabre atmosphere and tense gameplay a noticeable upgrade. In doing so, this revamp of the classic survival horror game shows that the series can still offer a terrifying experience like no other.&#xa;&#xa;You once again play as either Leon Kennedy or Claire Redfield. A viral outbreak has unleashed hordes of zombies and other grotesque monsters upon Raccoon City, leading to a series of dangerous and nightmare-inducing encounters for the two characters. While both protagonists&apos; storylines have similar plots and take place in the same locations, there are different supporting characters and unique challenges in each that set the two playthroughs apart.In traditional Resident Evil fashion, you&apos;re tasked with surviving through the night and overcoming the nightmarish creatures and devious puzzles found throughout the infested streets of the city, the tight, dimly lit halls of the Police Station, and in the subterranean passages below. RE2 is a great mix of the understated survivalist approach from the original games and the tactile, reflex-oriented gameplay from more recent entries. It&apos;s very much a game about escalation; as your resources dwindle and the monsters become fearsome and more elaborate, the pressure is always mounting as the story progresses, and each moment feels just a bit more desperate than the last. Even the smallest of victories can feel like major wins in RE2, and you&apos;ll often find yourself onto the next struggle before you know it.&#xa;&#xa;"/>
           </Properties>
         </Component>
       </SubComponents>

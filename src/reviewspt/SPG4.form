@@ -3,6 +3,7 @@
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="resizable" type="boolean" value="false"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -116,7 +117,7 @@
             </Property>
             <Property name="lineWrap" type="boolean" value="true"/>
             <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="As Big Boss, the leader of a private military group The Diamond Dogs, you go behind enemy lines to carry out recon and assassination contracts, as well as infiltrate the hideouts of your enemies. These include world powers and military leaders, many of whom work in the shadows. The Phantom Pain mixes historical events from the 1980s with a pinch of James Bond villainy and an exciting dollop of sci-fi dressing. There are times when it feels grounded in reality, but there are also just as many moments when it goes off the deep-end to great effect. Impossible technology and super-human abilities accompany almost every beat of the story. These oddities surprise you and instill wonder in the crazy, mixed-up world that you&apos;re meant to save."/>
+            <Property name="text" type="java.lang.String" value="The Metal Gear series has always delivered complex plots, with unexpected twists and revelations altering your perception of people and events you thought you understood. Though Metal Gear Solid V: The Phantom Pain continues this tradition, the majority of its plot focuses on the events at hand. Fans of the series will find their diligence rewarded in ways that newcomers can&apos;t begin to imagine, but such loyalty and knowledge isn&apos;t a prerequisite. Top-notch cinematography and voice acting echo--and at times exceed--contemporary standards for film and TV, carrying extraordinary characters into the realm of believability. Though you will cross a few elements in the world that illicit a chuckle, there&apos;s very little humor in The Phantom Pain&apos;s story; the dark themes and subject matter like disenfranchised youth being forced into combat call for a serious tone, after all. The gravity of the game&apos;s encounters leaves you on the edge of your seat, with a racing pulse.&#xa;&#xa;As Big Boss, the leader of a private military group The Diamond Dogs, you go behind enemy lines to carry out recon and assassination contracts, as well as infiltrate the hideouts of your enemies. These include world powers and military leaders, many of whom work in the shadows. The Phantom Pain mixes historical events from the 1980s with a pinch of James Bond villainy and an exciting dollop of sci-fi dressing. There are times when it feels grounded in reality, but there are also just as many moments when it goes off the deep-end to great effect. Impossible technology and super-human abilities accompany almost every beat of the story. These oddities surprise you and instill wonder in the crazy, mixed-up world that you&apos;re meant to save."/>
           </Properties>
         </Component>
       </SubComponents>

@@ -3,6 +3,7 @@
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="resizable" type="boolean" value="false"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -116,7 +117,7 @@
             </Property>
             <Property name="lineWrap" type="boolean" value="true"/>
             <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="With the Empire attacking the Kingdom&apos;s of the North and the Wild Hunt, a cav-&#xa;alcade of ghastly riders, breathing &#xa;down your neck, the only way to &#xa;survive is to fight back. As Geralt of &#xa;Rivia, a master swordsman and monsterhunter, leave none of your enemies &#xa;standing. Explore a gigantic open worldslay beasts and decide the fates of &#xa;whole communities with your actions, &#xa;all in a genuine next generation format."/>
+            <Property name="text" type="java.lang.String" value="In The Witcher 3: Wild Hunt, the sacred is always at war with the profane, and beauty is always at war with blood. The series has always contrasted its world&apos;s physical glamor with its intrinsic violence, but never has that contrast been this uneasy, this convulsive. That The Witcher 3 depicts the immediate brutality of battle in great detail is not a surprise; many games fill the screen with decapitated heads and gory entrails. It&apos;s the way this incredible adventure portrays the personal tragedies and underhanded opportunities that such battles provide that makes it so extraordinary.&#xa;&#xa;It is more than its thematic turbulence that makes The Witcher 3 extraordinary, actually. Excellence abounds at every turn in this open-world role-playing game: excellent exploration, excellent creature design, excellent combat mechanics, excellent character progression. But the moments that linger are those that reveal the deep ache in the world&apos;s inhabitants. In one quest, you reunite two lovers, one of which is now a rotting hag, its tongue lasciviously lolling from its mouth. In another, a corpulent spouse-abuser must find a way to love two different lost souls, each of which test the limits of his affection. Don&apos;t worry that these vague descriptions spoil important events: they are simple examples of the obstacles every resident faces. On the isles of Skellige and in the city of Novigrad, there is no joy without parallel sorrow. Every triumph demands a sacrifice."/>
           </Properties>
         </Component>
       </SubComponents>

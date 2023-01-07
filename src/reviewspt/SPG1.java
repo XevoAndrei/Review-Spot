@@ -36,6 +36,7 @@ public class SPG1 extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jButton1.setText("BACK");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -52,7 +53,7 @@ public class SPG1 extends javax.swing.JFrame {
         jTextArea1.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
-        jTextArea1.setText("The Forest is a survival horror game in a very literal sense. It has all the \nsurvival elements you’d expect, such asgathering materials to construct your \nbase andcraft items, to managing vario-us stats \nsuch as hunger, stamina, and even sanityBut, it’s the horror aspect of The Forestthat truly separates it from other games within the survival genre.\n\nYou play the unluckiest survival expert and father in the world, as your plane \ncrashes on a remote peninsula and your son is kidnapped by a mysterious red \nfigure. If that’s not bad enough, once \nyou begin exploring your surroundings\nand searching for your son, you’ll soondiscover this place isn’t so remote afterall.\n\n\n\n\n\n");
+        jTextArea1.setText("The broad premise of The Forest is far from unique. A plane crash lands on a seemingly deserted island, and you, a lone survivor, have to figure out a way to survive. It doesn't take long, however, until blood curdling screeches fill the night and glowing eyes appear in the distance. Once it sets in that your new home isn't as empty as it first appeared, The Forest evolves into a uniquely harrowing adventure that you won't soon forget.\n\nCannibals inhabit the grassy fields and pristine lakes around you, watching your every move; they are the source of The Forest's ever-present tension. You might expect monsters like this to attack on sight, but their behavior is erratic. Sometimes they'll charge forward to unsettle you during daylight but stop just outside striking distance to simply stare in silence. Other times they might feign a retreat before leaping into nearby trees to quickly get behind you. The Forest's enemies aren't easy to predict, which makes each encounter thrilling.The breadth of enemy types is impressive too, and they can get surprisingly weird. As you explore the island more and dive into terrifying, pitch-black caverns, enemies transform into terrifying body-horror figures--amalgamations of appendages that bellow deep, disturbing howls. They're frightening to behold and even scarier to fight.");
         jScrollPane1.setViewportView(jTextArea1);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/TheForestWallpaper.jpg"))); // NOI18N
