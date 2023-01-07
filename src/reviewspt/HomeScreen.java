@@ -40,6 +40,7 @@ public class HomeScreen extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Review Spot Gaming Community Entertaintment App");
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(255, 102, 102));
 
