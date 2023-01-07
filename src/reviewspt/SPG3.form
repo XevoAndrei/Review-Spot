@@ -97,7 +97,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="36" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="THE WITCHER 3"/>
+        <Property name="text" type="java.lang.String" value="METRO EXODUS"/>
       </Properties>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane1">
@@ -116,7 +116,7 @@
             </Property>
             <Property name="lineWrap" type="boolean" value="true"/>
             <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="With the Empire attacking the Kingdom&apos;s of the North and the Wild Hunt, a cav-&#xa;alcade of ghastly riders, breathing &#xa;down your neck, the only way to &#xa;survive is to fight back. As Geralt of &#xa;Rivia, a master swordsman and monsterhunter, leave none of your enemies &#xa;standing. Explore a gigantic open worldslay beasts and decide the fates of &#xa;whole communities with your actions, &#xa;all in a genuine next generation format."/>
+            <Property name="text" type="java.lang.String" value="The year is 2036.&#xa;&#xa;A quarter-century after nuclear war devastated the earth, a few thousand survivors still cling to existence beneath the ruins of Moscow, in the tunnels of the Metro.&#xa;&#xa;They have struggled against the poisoned elements, fought mutated beasts and paranormal horrors, and suffered the flames of civil war.&#xa;But now, as Artyom, you must flee the Metro and lead a band of Spartan Rangers on an incredible, continent-spanning journey across post-apocalyptic Russia in search of a new life in the East.&#xa;&#xa;Metro Exodus is an epic, story-driven first person shooter from 4A Games that blends deadly combat and stealth with exploration and survival horror in one of the most immersive game worlds ever created.&#xa;&#xa;Explore the Russian wilderness across vast, non-linear levels and follow a thrilling story-line that spans an entire year through spring, summer and autumn to the depths of nuclear winter.&#xa;&#xa;Inspired by the novels of Dmitry Glukhovsky, Metro Exodus continues Artyom&apos;s story in the greatest Metro adventure yet."/>
           </Properties>
         </Component>
       </SubComponents>
@@ -124,7 +124,7 @@
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/TheWitcherWallpaper.jpg"/>
+          <Image iconType="3" name="/MetroExodusWallpaper.jpg"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabel2"/>
       </Properties>
@@ -132,7 +132,7 @@
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/TheWitcherPhoto3.jpg"/>
+          <Image iconType="3" name="/MetroExodusPhoto3.jpg"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabel3"/>
       </Properties>
@@ -140,7 +140,7 @@
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/TheWitcherPhoto1.jpg"/>
+          <Image iconType="3" name="/MetroExodusPhoto1.jpg"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabel3"/>
       </Properties>
@@ -148,7 +148,7 @@
     <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/TheWitcherPhoto2.png"/>
+          <Image iconType="3" name="/MetroExodusPhoto2.jpg"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabel3"/>
       </Properties>

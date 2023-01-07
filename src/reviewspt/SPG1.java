@@ -36,7 +36,6 @@ public class SPG1 extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1400, 840));
 
         jButton1.setText("BACK");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -56,16 +55,16 @@ public class SPG1 extends javax.swing.JFrame {
         jTextArea1.setText("The Forest is a survival horror game in a very literal sense. It has all the \nsurvival elements you’d expect, such asgathering materials to construct your \nbase andcraft items, to managing vario-us stats \nsuch as hunger, stamina, and even sanityBut, it’s the horror aspect of The Forestthat truly separates it from other games within the survival genre.\n\nYou play the unluckiest survival expert and father in the world, as your plane \ncrashes on a remote peninsula and your son is kidnapped by a mysterious red \nfigure. If that’s not bad enough, once \nyou begin exploring your surroundings\nand searching for your son, you’ll soondiscover this place isn’t so remote afterall.\n\n\n\n\n\n");
         jScrollPane1.setViewportView(jTextArea1);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reviewspt/cropped-978-360-581828.jpg"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/TheForestWallpaper.jpg"))); // NOI18N
         jLabel2.setText("jLabel2");
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reviewspt/cropped-300-300-889406.jpg"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/TheForestPhoto3.jpg"))); // NOI18N
         jLabel3.setText("jLabel3");
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reviewspt/cropped-300-300-581826.jpg"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/TheForestPhoto3_1.jpg"))); // NOI18N
         jLabel4.setText("jLabel3");
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reviewspt/cropped-300-300-581830.jpg"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/TheForestPhoto2.jpg"))); // NOI18N
         jLabel5.setText("jLabel3");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
