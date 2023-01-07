@@ -68,6 +68,7 @@ public class IGMenu extends javax.swing.JFrame {
             }
         });
 
+        jTextArea1.setEditable(false);
         jTextArea1.setBackground(new java.awt.Color(153, 0, 153));
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N

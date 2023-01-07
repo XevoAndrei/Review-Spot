@@ -8,12 +8,12 @@ package reviewspt;
  *
  * @author siyah
  */
-public class SPG1 extends javax.swing.JFrame {
+public class SPG2 extends javax.swing.JFrame {
 
     /**
      * Creates new form SPG1
      */
-    public SPG1() {
+    public SPG2() {
         initComponents();
     }
 
@@ -36,7 +36,6 @@ public class SPG1 extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1400, 840));
 
         jButton1.setText("BACK");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -46,26 +45,26 @@ public class SPG1 extends javax.swing.JFrame {
         });
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 36)); // NOI18N
-        jLabel1.setText("THE FOREST");
+        jLabel1.setText("THE WITCHER 3");
 
         jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
-        jTextArea1.setText("The Forest is a survival horror game in a very literal sense. It has all the \nsurvival elements you’d expect, such asgathering materials to construct your \nbase andcraft items, to managing vario-us stats \nsuch as hunger, stamina, and even sanityBut, it’s the horror aspect of The Forestthat truly separates it from other games within the survival genre.\n\nYou play the unluckiest survival expert and father in the world, as your plane \ncrashes on a remote peninsula and your son is kidnapped by a mysterious red \nfigure. If that’s not bad enough, once \nyou begin exploring your surroundings\nand searching for your son, you’ll soondiscover this place isn’t so remote afterall.\n\n\n\n\n\n");
+        jTextArea1.setText("With the Empire attacking the Kingdom's of the North and the Wild Hunt, a cav-\nalcade of ghastly riders, breathing \ndown your neck, the only way to \nsurvive is to fight back. As Geralt of \nRivia, a master swordsman and monsterhunter, leave none of your enemies \nstanding. Explore a gigantic open worldslay beasts and decide the fates of \nwhole communities with your actions, \nall in a genuine next generation format.");
         jScrollPane1.setViewportView(jTextArea1);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reviewspt/cropped-978-360-581828.jpg"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reviewspt/cropped-978-360-608887.jpg"))); // NOI18N
         jLabel2.setText("jLabel2");
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reviewspt/cropped-300-300-889406.jpg"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reviewspt/cropped-300-300-1149115.jpg"))); // NOI18N
         jLabel3.setText("jLabel3");
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reviewspt/cropped-300-300-581826.jpg"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reviewspt/cropped-300-300-536009.jpg"))); // NOI18N
         jLabel4.setText("jLabel3");
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reviewspt/cropped-300-300-581830.jpg"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reviewspt/cropped-300-300-617970.png"))); // NOI18N
         jLabel5.setText("jLabel3");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -84,16 +83,16 @@ public class SPG1 extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 978, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(70, 70, 70)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap())
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(30, 30, 30))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -144,20 +143,21 @@ public class SPG1 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(SPG1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SPG2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(SPG1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SPG2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(SPG1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SPG2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(SPG1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SPG2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new SPG1().setVisible(true);
+                new SPG2().setVisible(true);
             }
         });
     }
