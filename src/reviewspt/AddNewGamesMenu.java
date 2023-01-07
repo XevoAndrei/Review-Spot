@@ -4,10 +4,52 @@ import java.util.*;
 import java.io.*;
 
 public class AddNewGamesMenu extends javax.swing.JFrame {
-
+    
+    ArrayList<Game> games;
 
     public AddNewGamesMenu() {
         initComponents();
+        games = new ArrayList<Game>();
+        populateArrayList();
+    }
+    public void populateArrayList(){
+        try {
+            FileInputStream file = new FileInputStream("Games.dat");
+            ObjectInputStream inputFile = new ObjectInputStream(file);
+            
+            boolean endOfFile = false;
+            while (!endOfFile){
+                try {
+                    games.add((Game) inputFile.readObject());
+                } catch (EOFException e){
+                    endOfFile = true;
+                } catch (IOException | ClassNotFoundException f) {
+                    JOptionPane.showMessageDialog(null, 
+                            f.getMessage());
+                }
+            }
+            inputFile.close();            
+        } catch (IOException e){
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
+    }
+    
+    public void saveGamesToFile(){
+        try {
+            FileOutputStream file2 = new FileOutputStream("Games.dat");
+            ObjectOutputStream outputFile2 = new ObjectOutputStream(file2);
+            
+            for (int i = 0; i<games.size(); i++){
+                outputFile2.writeObject(games.get(i));
+            }
+            outputFile2.close();
+            JOptionPane.showMessageDialog(null, 
+                    "Game successfully registered to the system.");
+            this.dispose();
+        } catch (IOException e){
+            JOptionPane.showMessageDialog(null, 
+                    e.getMessage());
+        }
     }
 
 
@@ -17,13 +59,13 @@ public class AddNewGamesMenu extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        tfGameName = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        tfCategoryName = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        tfPrice = new javax.swing.JTextField();
+        saveButton = new javax.swing.JButton();
+        backButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -33,11 +75,21 @@ public class AddNewGamesMenu extends javax.swing.JFrame {
 
         jLabel3.setText("CATEGORY:");
 
-        jLabel4.setText("PRICE:");
+        jLabel4.setText("PRICE (USD):");
 
-        jButton1.setText("SAVE");
+        saveButton.setText("SAVE");
+        saveButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                saveButtonActionPerformed(evt);
+            }
+        });
 
-        jButton2.setText("RETURN");
+        backButton.setText("RETURN");
+        backButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -54,21 +106,21 @@ public class AddNewGamesMenu extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel3)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField2))
+                                .addComponent(tfCategoryName))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(tfGameName, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel4)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jButton1)
+                                        .addComponent(saveButton)
                                         .addGap(18, 18, 18)
-                                        .addComponent(jButton2)
+                                        .addComponent(backButton)
                                         .addGap(0, 0, Short.MAX_VALUE))
-                                    .addComponent(jTextField3))))))
+                                    .addComponent(tfPrice))))))
                 .addContainerGap(84, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -79,28 +131,53 @@ public class AddNewGamesMenu extends javax.swing.JFrame {
                 .addGap(35, 35, 35)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tfGameName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tfCategoryName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tfPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(saveButton)
+                    .addComponent(backButton))
                 .addGap(49, 49, 49))
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    /**
-     * @param args the command line arguments
-     */
+    private void saveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveButtonActionPerformed
+        if (tfGameName.getText().isEmpty() || tfCategoryName.getText().isEmpty() || tfPrice.getText().isEmpty())
+            JOptionPane.showMessageDialog(null, "Please enter all the fields");
+        else {
+            String gameName = tfGameName.getText().trim();
+            String categoryName = tfCategoryName.getText().trim();
+            String price = tfPrice.getText().trim();
+            
+            Game game = new Game(gameName, categoryName, Double.parseDouble(price));
+            games.add(game);
+            
+            saveGamesToFile();
+            
+            AdminScreen as = new AdminScreen();
+            as.setVisible(true);
+            setVisible(false);
+            
+        }       
+               
+    }//GEN-LAST:event_saveButtonActionPerformed
+
+    private void backButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonActionPerformed
+            AdminScreen as = new AdminScreen();
+            as.setVisible(true);
+            setVisible(false);
+    }//GEN-LAST:event_backButtonActionPerformed
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -134,17 +211,14 @@ public class AddNewGamesMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton backButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
     private javax.swing.JButton saveButton;
-    private javax.swing.JButton saveButton1;
-    private javax.swing.JButton saveButton2;
+    private javax.swing.JTextField tfCategoryName;
+    private javax.swing.JTextField tfGameName;
+    private javax.swing.JTextField tfPrice;
     // End of variables declaration//GEN-END:variables
 }
