@@ -1,5 +1,6 @@
 package reviewspt;
-
+import java.awt.Desktop;
+import java.net.URL;
 public class IGMenu extends javax.swing.JFrame {
 
     public IGMenu() {
