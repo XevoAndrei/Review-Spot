@@ -60,6 +60,11 @@ public class IGMenu extends javax.swing.JFrame {
         jLabel8.setText("AVAILABLE PLATFORMS:");
 
         steam.setIcon(new javax.swing.ImageIcon(getClass().getResource("/steam.png"))); // NOI18N
+        steam.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                steamMouseClicked(evt);
+            }
+        });
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reviewwallpapers/nintendoswitch.png"))); // NOI18N
         jLabel6.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -173,11 +178,19 @@ public class IGMenu extends javax.swing.JFrame {
 
     private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
         try{
-            Desktop.getDesktop().browse(new URL("https://www.nintendo.com/store/products/doom-eternal-switch/").toURI());
+            Desktop.getDesktop().browse(new URL("https://www.nintendo.com/store/products/sigma-theory-switch/").toURI());
         }
         catch(Exception e)
         {}
     }//GEN-LAST:event_jLabel6MouseClicked
+
+    private void steamMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_steamMouseClicked
+        try{
+            Desktop.getDesktop().browse(new URL("https://store.steampowered.com/app/716640/Sigma_Theory_Global_Cold_War/").toURI());
+        }
+        catch(Exception e)
+        {}
+    }//GEN-LAST:event_steamMouseClicked
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */

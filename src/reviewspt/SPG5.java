@@ -198,7 +198,7 @@ public class SPG5 extends javax.swing.JFrame {
 
     private void jLabel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MouseClicked
         try{
-            Desktop.getDesktop().browse(new URL("https://www.xbox.com/tr-TR/games/store/resident-evil-2/bwmh951m3g3p").toURI());
+            Desktop.getDesktop().browse(new URL("https://store.playstation.com/tr-tr/product/EP0102-PPSA04289_00-BH2R000000000001").toURI());
         }
         catch(Exception e)
         {}
@@ -206,7 +206,7 @@ public class SPG5 extends javax.swing.JFrame {
 
     private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
         try{
-            Desktop.getDesktop().browse(new URL("https://www.xbox.com/tr-TR/games/store/war-thunder/bx1dtcbd1hxj").toURI());
+            Desktop.getDesktop().browse(new URL("https://www.xbox.com/tr-TR/games/store/resident-evil-2/bwmh951m3g3p").toURI());
         }
         catch(Exception e)
         {}
