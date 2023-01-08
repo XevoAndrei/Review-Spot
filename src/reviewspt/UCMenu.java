@@ -1,5 +1,6 @@
 package reviewspt;
 
+import java.text.DecimalFormat;
 import java.util.HashMap;
 import javax.swing.JOptionPane;
 
@@ -227,8 +228,8 @@ public class UCMenu extends javax.swing.JFrame {
     };
 
     private void ConvertButtonActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_ConvertButtonActionPerformed
-        Double total = 0.0;
-        Double amount = ParseDouble(txtamount.getText());
+        double total = 0.0;
+        double amount = ParseDouble(txtamount.getText());
 
         String from = txtfrom.getSelectedItem().toString();
         String to = txtto.getSelectedItem().toString();
@@ -239,7 +240,11 @@ public class UCMenu extends javax.swing.JFrame {
         }
 
         total = amount * rates.get(from).get(to);
-        JOptionPane.showMessageDialog(this, "Amount will be " + total.toString() + " " + to + ".");
+        System.out.println(total);
+        DecimalFormat df = new DecimalFormat("#0.00");
+        String price = df.format(total);
+        System.out.println(price);
+        JOptionPane.showMessageDialog(this, "Amount will be " + price + " " + to + ".");
     }// GEN-LAST:event_ConvertButtonActionPerformed
 
     private void txtamountActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_txtamountActionPerformed
