@@ -41,7 +41,7 @@ public class SPG3 extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(1607, 950));
         setResizable(false);
 
-        jButton1.setText("BACK");
+        jButton1.setText("HOME");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
