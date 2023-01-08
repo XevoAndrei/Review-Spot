@@ -3,6 +3,9 @@
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+      <Dimension value="[1555, 985]"/>
+    </Property>
     <Property name="resizable" type="boolean" value="false"/>
   </Properties>
   <SyntheticProperties>
@@ -26,40 +29,37 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                  <Component id="jLabel4" alignment="0" max="32767" attributes="0"/>
+                  <Component id="jLabel2" alignment="0" pref="0" max="32767" attributes="0"/>
                   <Group type="102" attributes="0">
-                      <Component id="jLabel2" min="-2" pref="978" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="jLabel4" min="-2" pref="300" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
-                      <Component id="jLabel5" min="-2" pref="300" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                      <Component id="jLabel3" min="-2" pref="300" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
-                      <Component id="jLabel7" min="-2" pref="260" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
                       <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="steam" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="playstation" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="xbox" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jLabel9" max="32767" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jButton1" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="jScrollPane1" alignment="0" min="-2" pref="331" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
+                  <Component id="jScrollPane1" max="32767" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="210" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="0" pref="118" max="32767" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -70,31 +70,42 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Component id="jLabel2" min="-2" pref="360" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel6" alignment="3" max="32767" attributes="0"/>
-                          <Component id="jLabel7" alignment="3" max="32767" attributes="0"/>
-                          <Component id="jLabel8" alignment="3" max="32767" attributes="0"/>
-                          <Component id="jLabel9" alignment="3" max="32767" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel4" alignment="3" min="-2" pref="300" max="-2" attributes="0"/>
-                          <Component id="jLabel3" alignment="3" min="-2" pref="300" max="-2" attributes="0"/>
-                          <Component id="jLabel5" alignment="3" min="-2" pref="300" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" min="-2" pref="470" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="jLabel2" min="-2" pref="360" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="jButton1" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="playstation" min="-2" max="-2" attributes="0"/>
+                                  <Component id="steam" min="-2" max="-2" attributes="0"/>
+                                  <Component id="xbox" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jScrollPane1" min="-2" pref="632" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="jLabel4" min="-2" pref="501" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="56" max="-2" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -134,7 +145,7 @@
             </Property>
             <Property name="lineWrap" type="boolean" value="true"/>
             <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="Melee-focused action games have spent years enacting the fantasy of engaging in armed combat, fortunately sparing us the hours of rigorous training and resolve it takes to actually do so in real life. But For Honor, Ubisoft&apos;s third-person weapon-based arena combat game, is different from other melee-focused action games, like Dark Souls or Dynasty Warriors. Its combat system is simple on the surface, but executing its more advanced tactics requires a patient mind, as well as an understanding of its deliberate pacing. There are not many games quite like For Honor. It&apos;s an incredibly entertaining fighter that&apos;s satisfying both in single and multiplayer, even despite the narrative flaws of its story mode.&#xa;&#xa;Its fantasy medieval world is populated by three of history&apos;s most iconic warrior classes: knights, vikings, and samurai. Regardless of which faction you choose to play as, For Honor challenges you to restrain yourself and uphold self-control in the face of strenuous conflict. The elegance of its combat is at times awe-inspiring, easily pulling you into the euphoric highs of a well-deserved victory, where your patience was maintained and your reflexes were on point."/>
+            <Property name="text" type="java.lang.String" value="Melee-focused action games have spent years enacting the fantasy of engaging in armed combat, fortunately sparing us the hours of rigorous training and resolve it takes to actually do so in real life. But For Honor, Ubisoft&apos;s third-person weapon-based arena combat game, is different from other melee-focused action games, like Dark Souls or Dynasty Warriors. Its combat system is simple on the surface, but executing its more advanced tactics requires a patient mind, as well as an understanding of its deliberate pacing. There are not many games quite like For Honor. It&apos;s an incredibly entertaining fighter that&apos;s satisfying both in single and multiplayer, even despite the narrative flaws of its story mode.&#xa;&#xa;Its fantasy medieval world is populated by three of history&apos;s most iconic warrior classes: knights, vikings, and samurai. Regardless of which faction you choose to play as, For Honor challenges you to restrain yourself and uphold self-control in the face of strenuous conflict. The elegance of its combat is at times awe-inspiring, easily pulling you into the euphoric highs of a well-deserved victory, where your patience was maintained and your reflexes were on point.&#xa;&#xa;For Honor may have a single player campaign with awesome lore behind it, but it&apos;s mainly focused on multiplayer which story continues and new heroes being added to the game."/>
           </Properties>
         </Component>
       </SubComponents>
@@ -147,60 +158,71 @@
         <Property name="text" type="java.lang.String" value="jLabel2"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/ForHonorPhoto3.jpg"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="jLabel3"/>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/ForHonorPhoto1.jpg"/>
+          <Image iconType="3" name="/reviewwallpapers/forhonor1.jpg"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="jLabel3"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel5">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/ForHonorPhoto2.jpg"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="jLabel3"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel6">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="18" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Starter Edition : 14.99$"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel7">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="18" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Marching Fire Edition : 49.99$"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel8">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="18" style="1"/>
+          <Font name="sansserif" size="18" style="3"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Complete Edition : 99.99$"/>
+        <Property name="text" type="java.lang.String" value="AVAILABLE PLATFORMS:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="steam">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/steam.png"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="steamMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="playstation">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/ps.png"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="playstationMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="xbox">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/xbox.png"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="xboxMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/reviewwallpapers/forhonorign.png"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel5">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/reviewwallpapers/fhmeta.png"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel9">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="18" style="1"/>
+          <Font name="sansserif" size="18" style="3"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Standart Edition : 29.99$"/>
+        <Property name="text" type="java.lang.String" value="CATEGORY: Medieval Combat, Action, PVP"/>
       </Properties>
     </Component>
   </SubComponents>

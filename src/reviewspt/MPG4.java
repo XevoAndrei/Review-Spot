@@ -1,13 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package reviewspt;
 
-/**
- *
- * @author siyah
- */
+import java.awt.Desktop;
+import java.net.URL;
+
 public class MPG4 extends javax.swing.JFrame {
 
     /**
@@ -31,15 +26,17 @@ public class MPG4 extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
+        steam = new javax.swing.JLabel();
+        playstation = new javax.swing.JLabel();
+        xbox = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(1555, 985));
         setResizable(false);
 
         jButton1.setText("BACK");
@@ -57,32 +54,44 @@ public class MPG4 extends javax.swing.JFrame {
         jTextArea1.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
-        jTextArea1.setText("Melee-focused action games have spent years enacting the fantasy of engaging in armed combat, fortunately sparing us the hours of rigorous training and resolve it takes to actually do so in real life. But For Honor, Ubisoft's third-person weapon-based arena combat game, is different from other melee-focused action games, like Dark Souls or Dynasty Warriors. Its combat system is simple on the surface, but executing its more advanced tactics requires a patient mind, as well as an understanding of its deliberate pacing. There are not many games quite like For Honor. It's an incredibly entertaining fighter that's satisfying both in single and multiplayer, even despite the narrative flaws of its story mode.\n\nIts fantasy medieval world is populated by three of history's most iconic warrior classes: knights, vikings, and samurai. Regardless of which faction you choose to play as, For Honor challenges you to restrain yourself and uphold self-control in the face of strenuous conflict. The elegance of its combat is at times awe-inspiring, easily pulling you into the euphoric highs of a well-deserved victory, where your patience was maintained and your reflexes were on point.");
+        jTextArea1.setText("Melee-focused action games have spent years enacting the fantasy of engaging in armed combat, fortunately sparing us the hours of rigorous training and resolve it takes to actually do so in real life. But For Honor, Ubisoft's third-person weapon-based arena combat game, is different from other melee-focused action games, like Dark Souls or Dynasty Warriors. Its combat system is simple on the surface, but executing its more advanced tactics requires a patient mind, as well as an understanding of its deliberate pacing. There are not many games quite like For Honor. It's an incredibly entertaining fighter that's satisfying both in single and multiplayer, even despite the narrative flaws of its story mode.\n\nIts fantasy medieval world is populated by three of history's most iconic warrior classes: knights, vikings, and samurai. Regardless of which faction you choose to play as, For Honor challenges you to restrain yourself and uphold self-control in the face of strenuous conflict. The elegance of its combat is at times awe-inspiring, easily pulling you into the euphoric highs of a well-deserved victory, where your patience was maintained and your reflexes were on point.\n\nFor Honor may have a single player campaign with awesome lore behind it, but it's mainly focused on multiplayer which story continues and new heroes being added to the game.");
         jScrollPane1.setViewportView(jTextArea1);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ForHonorWallpaper.jpg"))); // NOI18N
         jLabel2.setText("jLabel2");
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ForHonorPhoto3.jpg"))); // NOI18N
-        jLabel3.setText("jLabel3");
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reviewwallpapers/forhonor1.jpg"))); // NOI18N
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ForHonorPhoto1.jpg"))); // NOI18N
-        jLabel4.setText("jLabel3");
+        jLabel8.setFont(new java.awt.Font("sansserif", 3, 18)); // NOI18N
+        jLabel8.setText("AVAILABLE PLATFORMS:");
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ForHonorPhoto2.jpg"))); // NOI18N
-        jLabel5.setText("jLabel3");
+        steam.setIcon(new javax.swing.ImageIcon(getClass().getResource("/steam.png"))); // NOI18N
+        steam.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                steamMouseClicked(evt);
+            }
+        });
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel6.setText("Starter Edition : 14.99$");
+        playstation.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ps.png"))); // NOI18N
+        playstation.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                playstationMouseClicked(evt);
+            }
+        });
 
-        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel7.setText("Marching Fire Edition : 49.99$");
+        xbox.setIcon(new javax.swing.ImageIcon(getClass().getResource("/xbox.png"))); // NOI18N
+        xbox.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                xboxMouseClicked(evt);
+            }
+        });
 
-        jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel8.setText("Complete Edition : 99.99$");
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reviewwallpapers/forhonorign.png"))); // NOI18N
 
-        jLabel9.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel9.setText("Standart Edition : 29.99$");
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reviewwallpapers/fhmeta.png"))); // NOI18N
+
+        jLabel9.setFont(new java.awt.Font("sansserif", 3, 18)); // NOI18N
+        jLabel9.setText("CATEGORY: Medieval Combat, Action, PVP");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -90,62 +99,68 @@ public class MPG4 extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 978, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(38, 38, 38)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel6)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel9)
-                        .addGap(17, 17, 17)
-                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jLabel8)
-                        .addGap(68, 68, 68)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(steam)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(playstation)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(xbox)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton1)))
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel1)
+                        .addGap(210, 210, 210))
                     .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(66, 66, 66)
-                        .addComponent(jLabel1)))
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel5))
+                        .addGap(0, 118, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap())
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel1)
+                        .addGap(2, 2, 2)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 470, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel3)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel5)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(16, 16, 16)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(jButton1)
+                                        .addComponent(jLabel9))
+                                    .addComponent(jLabel8)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(playstation)
+                                    .addComponent(steam)
+                                    .addComponent(xbox))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 632, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton1)
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 501, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(56, 56, 56))))
         );
 
         pack();
@@ -158,9 +173,30 @@ public class MPG4 extends javax.swing.JFrame {
         setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+    private void steamMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_steamMouseClicked
+        try{
+            Desktop.getDesktop().browse(new URL("https://store.steampowered.com/app/304390/FOR_HONOR/").toURI());
+        }
+        catch(Exception e)
+        {}
+    }//GEN-LAST:event_steamMouseClicked
+
+    private void playstationMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_playstationMouseClicked
+        try{
+            Desktop.getDesktop().browse(new URL("https://store.playstation.com/tr-tr/product/EP0001-CUSA05264_00-FHGAMEPS40000002").toURI());
+        }
+        catch(Exception e)
+        {}
+    }//GEN-LAST:event_playstationMouseClicked
+
+    private void xboxMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_xboxMouseClicked
+        try{
+            Desktop.getDesktop().browse(new URL("https://www.xbox.com/tr-TR/games/store/for-honor-standard-edition/c3hqkx3b35pd").toURI());
+        }
+        catch(Exception e)
+        {}
+    }//GEN-LAST:event_xboxMouseClicked
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -215,11 +251,12 @@ public class MPG4 extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JLabel playstation;
+    private javax.swing.JLabel steam;
+    private javax.swing.JLabel xbox;
     // End of variables declaration//GEN-END:variables
 }
