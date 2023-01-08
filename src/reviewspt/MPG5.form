@@ -24,42 +24,42 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
-              <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                  <Component id="jLabel2" alignment="0" min="-2" pref="978" max="-2" attributes="0"/>
+                  <Component id="jLabel4" alignment="0" pref="0" max="32767" attributes="0"/>
                   <Group type="102" attributes="0">
+                      <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                      <Component id="steam" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Component id="jLabel4" min="-2" pref="300" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
-                              <Component id="jLabel5" min="-2" pref="300" max="-2" attributes="0"/>
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Component id="jLabel3" min="-2" pref="300" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" attributes="0">
-                              <Component id="jLabel2" min="-2" pref="978" max="-2" attributes="0"/>
-                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                          </Group>
-                      </Group>
+                      <Component id="battlenet" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
-                      <Component id="jLabel6" min="-2" pref="174" max="-2" attributes="0"/>
+                      <Component id="playstation" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="xbox" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
+                      <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
+              <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jButton1" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="jScrollPane1" alignment="0" min="-2" pref="331" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jScrollPane1" min="-2" pref="670" max="-2" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="jLabel3" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jLabel5" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="0" pref="12" max="32767" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -69,26 +69,49 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Component id="jLabel2" min="-2" pref="360" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jLabel6" max="32767" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="jLabel4" alignment="3" min="-2" pref="300" max="-2" attributes="0"/>
-                          <Component id="jLabel3" alignment="3" min="-2" pref="300" max="-2" attributes="0"/>
-                          <Component id="jLabel5" alignment="3" min="-2" pref="300" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jScrollPane1" min="-2" pref="632" max="-2" attributes="0"/>
+                      <Component id="jScrollPane1" min="-2" pref="485" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="jLabel2" min="-2" pref="360" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="steam" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="battlenet" min="-2" max="-2" attributes="0"/>
+                                          <Component id="playstation" min="-2" max="-2" attributes="0"/>
+                                          <Component id="xbox" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="jLabel8" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <Component id="jLabel4" min="-2" pref="592" max="-2" attributes="0"/>
+                      <EmptySpace pref="14" max="32767" attributes="0"/>
                   </Group>
               </Group>
           </Group>
@@ -109,7 +132,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Times New Roman" size="36" style="0"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="APEX LEGENDS"/>
+        <Property name="text" type="java.lang.String" value="CALL OF DUTY: MODERN WARFARE II"/>
       </Properties>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane1">
@@ -128,7 +151,7 @@
             </Property>
             <Property name="lineWrap" type="boolean" value="true"/>
             <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="If Apex Legends has one thing going for it, it&apos;s the feeling of being complete--something not every battle royale game can claim. The shooter sub-genre&apos;s huge popularity means there are lots of games that do last-player-standing competition well, but with a few troubles along the way. Some well-established shooters are adding battle royale to their offerings, fitting their existing gameplay into its framework. Other battle royale games are constantly struggling with balancing issues and bug fixes, adding and removing elements as they figure out what works and what doesn&apos;t. And still others started life as something else and managed to retrofit their mechanics into the battle royale mold, with some ideas fitting better than others.&#xa;&#xa;Apex Legends, on the other hand, focuses on doing one thing extremely well. That thing is team competition in the battle royale genre; at launch, it only includes a team-based mode where 20 groups of three players square off against each other. Everything in Apex Legends works to further teamwork: that includes a number of improvements to issues that plague the whole genre, like cleaning up inventory management and increasing accessibility, and the addition of new ideas, like squad composition elements and special character abilities."/>
+            <Property name="text" type="java.lang.String" value="Call of Duty again returns to current times with beloved developer Infinity Ward directing Modern Warfare II. A follow-up to 2019&#x2032;s Modern Warfare after the series took multiple pitstops in historical settings, the latest fittingly arrives with sensible modernizations across its many offerings. New physics, A.I., vehicles and more pepper the upgrades list for a game that makes a by-the-books story interesting with surprising gameplay variety and a multiplayer scene revamped with fresh-feeling modes and additions. The result is again a COD release that won&apos;t necessarily blindside old and new players alike. But MWII has the groundwork of a robust offering that explains the series&apos; dominance and the potential to be the best in said series, making it quite the potential feat. &#xa;The actual quality of the storytelling in MWII will be a letdown for those hoping for more of what the predecessor provided. There, the story really dialed in on the all-too-human aspects of war and depicted individuals grappling with outright atrocities at ground level. It was refreshing and uncomfortable. Here? Things are much more cookie-cutter, as if the goal was to apologetically dial it back. This is the expected ho-rah friends blasting up enemies together shtick with predictable twists. It wouldn&apos;t be so bad had the predecessor not forged ahead bravely into such interesting grounds, and it&apos;s not bad, but it is a little disappointing. Quality of the story aside, the campaign is just wicked fun. MWII wears many, many hats across its extensive story mode. There are the typical COD-infused classics like serving as the eye-in-the-sky aerial support or a hostage scenario. And the game, especially early, dives into those breach-and-clear scenarios that are splendidly paced and laced with more tension than most games ever manage to achieve. And about that multiplayer.&#xa;&#xa;It would be a disservice to the quality and consistency of gunplay and overall gameplay to call this just what players would expect from Call of Duty. The series, after all, spent the last two years in the Cold War and World War II, so there&apos;s strangely some nostalgia involved in going back to this modern, tactical setting.&#xa;&#xa;There, players will find the usual suspects like team deathmatch, domination, hardpoint and free-for-all lobbies to tackle.&#xa;&#xa;Invasion or Ground War, the big player-count modes, also return. The former throws bots into the fray of what is really just a big team deathmatch battle while the latter thankfully features some tight layouts and design that leave it feeling a little less chaotic than past renditions.&#xa;&#xa;We threw in a Battlefield mention before and that&apos;s worth doing again with this year&apos;s game adding the ability to spawn into things like transport helicopters before diving down into the fray. It&apos;s a nice addition that provides more nuance and possible strategy to the experience.&#xa;&#xa;Prisoner Rescue (exactly what it sounds like) and Knock Out (secure bag, hold it for a minute) are the big new additions that are a downright blast. Each mode features no respawns, but players can revive teammates. It&apos;s a pair of modes ripe for big competitive scenes.&#xa;&#xa;Oddly, there is the debut of a third-person mode in multiplayer within its own game mode. This provides the obvious ability to peek around obstacles without exposing oneself to fire (in other FPS games, players might emote to pull the camera back in third person to accomplish the same thing, for what it&apos;s worth). But it&apos;s otherwise clunky, and in true third-person fashion, players can only scope down sights with high magnifications.&#xa;Gunsmith returns with some highs and lows. Going back to just five weapon attachments is nice and being able to dive in after level 20 and fine-tune each for give-and-take stat changes is nice. But the overall user interface is a confusing mess of pop-ups and complex button prompts that could use a next-generation overhaul.&#xa;Multiplayer map design goes the expected and unexpected routes. There are some fun three-lane affairs and interesting verticality that will keep things fresh. Then there&apos;s a single-lane map with junk scattered about and horrific spawns that will undoubtedly go down as one to avoid.&#xa;The popular Spec Ops mode is back but with only three missions. These are much grander than ones from the past and players are free to tackle things as they see fit, but they do feel slapped under the Spec Ops umbrella just to get the name in there.&#xa;With any luck, notable omissions (stat tracking?) and problems (the messy UI, etc.) will see solutions in future patches. Because otherwise, this is COD multiplayer at its peak.&#xa;As an aside, no matter how great the multiplayer is, it&apos;s clearly starting to take a backseat in popularity to Warzone (which has a new iteration on the way) and the very intriguing DMZ mode, which could have huge Escape from Tarkov vibes.&#xa;&#xa;There&apos;s nothing wrong with the traditional multiplayer fading out of relevance for a period of time as Warzone-like modes dominate the market. It&apos;s still there and dominates its niche regardless, but is worth noting."/>
           </Properties>
         </Component>
       </SubComponents>
@@ -136,41 +159,87 @@
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/ApexLegendsWallpaper.jpg"/>
+          <Image iconType="3" name="/reviewwallpapers/ModernWarfareIIWallpaper.jpg"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabel2"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
-      <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/ApexLegendesPhoto3.jpg"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="jLabel3"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/ApexLegendesPhoto1.jpg"/>
+          <Image iconType="3" name="/reviewwallpapers/mw2wallpaper2.jpg"/>
         </Property>
         <Property name="text" type="java.lang.String" value="jLabel3"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel8">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="sansserif" size="18" style="3"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="AVAILABLE PLATFORMS:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="steam">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/steam.png"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="steamMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="battlenet">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/reviewwallpapers/battlenet.png"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="battlenetMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="playstation">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/ps.png"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="playstationMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="xbox">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/xbox.png"/>
+        </Property>
+      </Properties>
+      <Events>
+        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="xboxMouseClicked"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel9">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="sansserif" size="18" style="3"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="CATEGORY: Competitive FPS, Battle Royale"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/reviewwallpapers/mw2spign.png"/>
+        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/ApexLegendesPhoto2.jpg"/>
+          <Image iconType="3" name="/reviewwallpapers/mw2mpign.png"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="jLabel3"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel6">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="24" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Free To Play"/>
       </Properties>
     </Component>
   </SubComponents>

@@ -30,10 +30,9 @@ public class MPG1 extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1800, 985));
         setResizable(false);
 
         jButton1.setText("HOME");
@@ -51,7 +50,7 @@ public class MPG1 extends javax.swing.JFrame {
         jTextArea1.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
-        jTextArea1.setText("Escape from Tarkov is a hardcore and realistic online first-person action RPG/Simulator with MMO features and story-driven walkthrough. With each passing day the situation in the Norvinsk region grows more and more complicated. Incessant warfare in Tarkov has sparked massive panic; local population has fled the city, but those who stayed are looking to improve their fortunes at the expense of others. Having accepted the new reality, “savage” Tarkov locals - Scavs flocked into well-armed gangs and started the redivision of the city. Nowadays, Tarkov is separated by unseen borders, controlled by different groups. Gain-greedy gunmen would go to any length to have their way, including the murder of civilians and direct confrontation with the two private military companies. The players will have to experience living in the skin of one of the mercenaries who survived the initial stage of the Tarkov conflict. After choosing one of the sides – USEC or BEAR – the player’s character starts to make his way out of the city. Tarkov is sealed off by UN and Russian military, supply chains are cut, communication with operational command is lost, and in these conditions everyone has to make his own choices of what to do and how to get out of the chaos-ridden metropolis.\n");
+        jTextArea1.setText("Escape from Tarkov is a hardcore and realistic online first-person action RPG/Simulator with MMO features and story-driven walkthrough. With each passing day the situation in the Norvinsk region grows more and more complicated. Incessant warfare in Tarkov has sparked massive panic; local population has fled the city, but those who stayed are looking to improve their fortunes at the expense of others. Having accepted the new reality, “savage” Tarkov locals - Scavs flocked into well-armed gangs and started the redivision of the city. Nowadays, Tarkov is separated by unseen borders, controlled by different groups. Gain-greedy gunmen would go to any length to have their way, including the murder of civilians and direct confrontation with the two private military companies. The players will have to experience living in the skin of one of the mercenaries who survived the initial stage of the Tarkov conflict. After choosing one of the sides – USEC or BEAR – the player’s character starts to make his way out of the city. Tarkov is sealed off by UN and Russian military, supply chains are cut, communication with operational command is lost, and in these conditions everyone has to make his own choices of what to do and how to get out of the chaos-ridden metropolis. \n\nThere are no complete reviews because game is in BETA, but Review Spot admins gave;\n\n8/10 \n\nGame still has some bugs with desync and optimization issues which some maps runs poorly      even on high end computers but EFT is still an awesome game and created its own genre.\n\nPRE-ORDER NOW: \n");
         jScrollPane1.setViewportView(jTextArea1);
 
         tarkovWallpaper.setIcon(new javax.swing.ImageIcon(getClass().getResource("/EscapeFromTarkovWallpaper.png"))); // NOI18N
@@ -72,7 +71,12 @@ public class MPG1 extends javax.swing.JFrame {
         jLabel9.setFont(new java.awt.Font("sansserif", 3, 18)); // NOI18N
         jLabel9.setText("CATEGORY: Hardcore MMOFPS, Loot Shooter, Realistic ");
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reviewwallpapers/eft.png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reviewwallpapers/eftpreorder.png"))); // NOI18N
+        jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel5MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -93,18 +97,18 @@ public class MPG1 extends javax.swing.JFrame {
                         .addComponent(tarkovWallpaper, javax.swing.GroupLayout.PREFERRED_SIZE, 900, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel4)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 210, Short.MAX_VALUE)
+                        .addComponent(jLabel1)
+                        .addGap(195, 195, 195))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 780, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE)))
-                        .addContainerGap())
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(187, 187, 187)
-                        .addComponent(jLabel1)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                .addComponent(jLabel5)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addComponent(jScrollPane1))
+                        .addContainerGap())))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -128,15 +132,14 @@ public class MPG1 extends javax.swing.JFrame {
                                         .addGap(20, 20, 20))
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                         .addComponent(jLabel2)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))))))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))))
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 498, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 355, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 498, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 565, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel5)))
                 .addContainerGap(53, Short.MAX_VALUE))
         );
 
@@ -157,6 +160,14 @@ public class MPG1 extends javax.swing.JFrame {
         catch(Exception e)
         {}
     }//GEN-LAST:event_jLabel2MouseClicked
+
+    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
+        try{
+            Desktop.getDesktop().browse(new URL("https://www.escapefromtarkov.com/preorder-page").toURI());
+        }
+        catch(Exception e)
+        {}
+    }//GEN-LAST:event_jLabel5MouseClicked
 
     /**
      * @param args the command line arguments
@@ -204,8 +215,8 @@ public class MPG1 extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;

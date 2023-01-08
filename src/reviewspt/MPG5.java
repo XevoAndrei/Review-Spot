@@ -1,13 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package reviewspt;
 
-/**
- *
- * @author siyah
- */
+import java.awt.Desktop;
+import java.net.URL;
+
 public class MPG5 extends javax.swing.JFrame {
 
     /**
@@ -31,10 +26,15 @@ public class MPG5 extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        steam = new javax.swing.JLabel();
+        battlenet = new javax.swing.JLabel();
+        playstation = new javax.swing.JLabel();
+        xbox = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -47,86 +47,134 @@ public class MPG5 extends javax.swing.JFrame {
         });
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 36)); // NOI18N
-        jLabel1.setText("APEX LEGENDS");
+        jLabel1.setText("CALL OF DUTY: MODERN WARFARE II");
 
         jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
         jTextArea1.setFont(new java.awt.Font("Times New Roman", 0, 20)); // NOI18N
         jTextArea1.setLineWrap(true);
         jTextArea1.setRows(5);
-        jTextArea1.setText("If Apex Legends has one thing going for it, it's the feeling of being complete--something not every battle royale game can claim. The shooter sub-genre's huge popularity means there are lots of games that do last-player-standing competition well, but with a few troubles along the way. Some well-established shooters are adding battle royale to their offerings, fitting their existing gameplay into its framework. Other battle royale games are constantly struggling with balancing issues and bug fixes, adding and removing elements as they figure out what works and what doesn't. And still others started life as something else and managed to retrofit their mechanics into the battle royale mold, with some ideas fitting better than others.\n\nApex Legends, on the other hand, focuses on doing one thing extremely well. That thing is team competition in the battle royale genre; at launch, it only includes a team-based mode where 20 groups of three players square off against each other. Everything in Apex Legends works to further teamwork: that includes a number of improvements to issues that plague the whole genre, like cleaning up inventory management and increasing accessibility, and the addition of new ideas, like squad composition elements and special character abilities.");
+        jTextArea1.setText("Call of Duty again returns to current times with beloved developer Infinity Ward directing Modern Warfare II. A follow-up to 2019′s Modern Warfare after the series took multiple pitstops in historical settings, the latest fittingly arrives with sensible modernizations across its many offerings. New physics, A.I., vehicles and more pepper the upgrades list for a game that makes a by-the-books story interesting with surprising gameplay variety and a multiplayer scene revamped with fresh-feeling modes and additions. The result is again a COD release that won't necessarily blindside old and new players alike. But MWII has the groundwork of a robust offering that explains the series' dominance and the potential to be the best in said series, making it quite the potential feat. \nThe actual quality of the storytelling in MWII will be a letdown for those hoping for more of what the predecessor provided. There, the story really dialed in on the all-too-human aspects of war and depicted individuals grappling with outright atrocities at ground level. It was refreshing and uncomfortable. Here? Things are much more cookie-cutter, as if the goal was to apologetically dial it back. This is the expected ho-rah friends blasting up enemies together shtick with predictable twists. It wouldn't be so bad had the predecessor not forged ahead bravely into such interesting grounds, and it's not bad, but it is a little disappointing. Quality of the story aside, the campaign is just wicked fun. MWII wears many, many hats across its extensive story mode. There are the typical COD-infused classics like serving as the eye-in-the-sky aerial support or a hostage scenario. And the game, especially early, dives into those breach-and-clear scenarios that are splendidly paced and laced with more tension than most games ever manage to achieve. And about that multiplayer.\n\nIt would be a disservice to the quality and consistency of gunplay and overall gameplay to call this just what players would expect from Call of Duty. The series, after all, spent the last two years in the Cold War and World War II, so there's strangely some nostalgia involved in going back to this modern, tactical setting.\n\nThere, players will find the usual suspects like team deathmatch, domination, hardpoint and free-for-all lobbies to tackle.\n\nInvasion or Ground War, the big player-count modes, also return. The former throws bots into the fray of what is really just a big team deathmatch battle while the latter thankfully features some tight layouts and design that leave it feeling a little less chaotic than past renditions.\n\nWe threw in a Battlefield mention before and that's worth doing again with this year's game adding the ability to spawn into things like transport helicopters before diving down into the fray. It's a nice addition that provides more nuance and possible strategy to the experience.\n\nPrisoner Rescue (exactly what it sounds like) and Knock Out (secure bag, hold it for a minute) are the big new additions that are a downright blast. Each mode features no respawns, but players can revive teammates. It's a pair of modes ripe for big competitive scenes.\n\nOddly, there is the debut of a third-person mode in multiplayer within its own game mode. This provides the obvious ability to peek around obstacles without exposing oneself to fire (in other FPS games, players might emote to pull the camera back in third person to accomplish the same thing, for what it's worth). But it's otherwise clunky, and in true third-person fashion, players can only scope down sights with high magnifications.\nGunsmith returns with some highs and lows. Going back to just five weapon attachments is nice and being able to dive in after level 20 and fine-tune each for give-and-take stat changes is nice. But the overall user interface is a confusing mess of pop-ups and complex button prompts that could use a next-generation overhaul.\nMultiplayer map design goes the expected and unexpected routes. There are some fun three-lane affairs and interesting verticality that will keep things fresh. Then there's a single-lane map with junk scattered about and horrific spawns that will undoubtedly go down as one to avoid.\nThe popular Spec Ops mode is back but with only three missions. These are much grander than ones from the past and players are free to tackle things as they see fit, but they do feel slapped under the Spec Ops umbrella just to get the name in there.\nWith any luck, notable omissions (stat tracking?) and problems (the messy UI, etc.) will see solutions in future patches. Because otherwise, this is COD multiplayer at its peak.\nAs an aside, no matter how great the multiplayer is, it's clearly starting to take a backseat in popularity to Warzone (which has a new iteration on the way) and the very intriguing DMZ mode, which could have huge Escape from Tarkov vibes.\n\nThere's nothing wrong with the traditional multiplayer fading out of relevance for a period of time as Warzone-like modes dominate the market. It's still there and dominates its niche regardless, but is worth noting.");
         jScrollPane1.setViewportView(jTextArea1);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ApexLegendsWallpaper.jpg"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reviewwallpapers/ModernWarfareIIWallpaper.jpg"))); // NOI18N
         jLabel2.setText("jLabel2");
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ApexLegendesPhoto3.jpg"))); // NOI18N
-        jLabel3.setText("jLabel3");
-
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ApexLegendesPhoto1.jpg"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reviewwallpapers/mw2wallpaper2.jpg"))); // NOI18N
         jLabel4.setText("jLabel3");
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ApexLegendesPhoto2.jpg"))); // NOI18N
-        jLabel5.setText("jLabel3");
+        jLabel8.setFont(new java.awt.Font("sansserif", 3, 18)); // NOI18N
+        jLabel8.setText("AVAILABLE PLATFORMS:");
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel6.setText("Free To Play");
+        steam.setIcon(new javax.swing.ImageIcon(getClass().getResource("/steam.png"))); // NOI18N
+        steam.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                steamMouseClicked(evt);
+            }
+        });
+
+        battlenet.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reviewwallpapers/battlenet.png"))); // NOI18N
+        battlenet.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                battlenetMouseClicked(evt);
+            }
+        });
+
+        playstation.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ps.png"))); // NOI18N
+        playstation.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                playstationMouseClicked(evt);
+            }
+        });
+
+        xbox.setIcon(new javax.swing.ImageIcon(getClass().getResource("/xbox.png"))); // NOI18N
+        xbox.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                xboxMouseClicked(evt);
+            }
+        });
+
+        jLabel9.setFont(new java.awt.Font("sansserif", 3, 18)); // NOI18N
+        jLabel9.setText("CATEGORY: Competitive FPS, Battle Royale");
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reviewwallpapers/mw2spign.png"))); // NOI18N
+
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/reviewwallpapers/mw2mpign.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 978, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel8)
+                        .addGap(12, 12, 12)
+                        .addComponent(steam)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(battlenet)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(playstation)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(xbox)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel9)
+                        .addGap(27, 27, 27)
+                        .addComponent(jButton1)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(38, 38, 38)
-                                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 978, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(0, 0, Short.MAX_VALUE)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(49, 49, 49)
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jLabel1)
-                        .addGap(36, 36, 36))))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 670, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGap(0, 12, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap())
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 632, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 485, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton1)
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                        .addComponent(jLabel5)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(steam)
+                                            .addComponent(battlenet)
+                                            .addComponent(playstation)
+                                            .addComponent(xbox)))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(24, 24, 24)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jLabel9)
+                                            .addComponent(jButton1))))
+                                .addGap(12, 12, 12))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jLabel8)
+                                .addGap(18, 18, 18)))
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 592, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(14, Short.MAX_VALUE))))
         );
 
         pack();
@@ -138,6 +186,38 @@ public class MPG5 extends javax.swing.JFrame {
         mpg.setVisible(true);
         setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void steamMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_steamMouseClicked
+        try{
+            Desktop.getDesktop().browse(new URL("https://store.steampowered.com/app/1938090/Call_of_Duty_Modern_Warfare_II/").toURI());
+        }
+        catch(Exception e)
+        {}
+    }//GEN-LAST:event_steamMouseClicked
+
+    private void battlenetMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_battlenetMouseClicked
+        try{
+            Desktop.getDesktop().browse(new URL("https://us.shop.battle.net/en-us/family/call-of-duty-modern-warfare-ii").toURI());
+        }
+        catch(Exception e)
+        {}
+    }//GEN-LAST:event_battlenetMouseClicked
+
+    private void playstationMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_playstationMouseClicked
+        try{
+            Desktop.getDesktop().browse(new URL("https://store.playstation.com/en-tr/concept/10001130").toURI());
+        }
+        catch(Exception e)
+        {}
+    }//GEN-LAST:event_playstationMouseClicked
+
+    private void xboxMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_xboxMouseClicked
+        try{
+            Desktop.getDesktop().browse(new URL("https://www.xbox.com/tr-TR/games/store/call-of-duty-modern-warfare-ii/9N201KQXS5BM").toURI());
+        }
+        catch(Exception e)
+        {}
+    }//GEN-LAST:event_xboxMouseClicked
 
     /**
      * @param args the command line arguments
@@ -190,14 +270,19 @@ public class MPG5 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel battlenet;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JLabel playstation;
+    private javax.swing.JLabel steam;
+    private javax.swing.JLabel xbox;
     // End of variables declaration//GEN-END:variables
 }
