@@ -236,7 +236,7 @@ public class ManageModsMenu extends javax.swing.JFrame {
         Role role = Moderators.get(selectedIndexEmp).getRole();
         int empRoleIndex=0;
         for (int i=0; i<roles.size(); i++){
-            if (roles.get(i).equals(role)){
+            if (roles.get(i).getRoleName().equals(role.getRoleName())){
                 empRoleIndex = i;
                 break;
             }                
