@@ -4,3 +4,4 @@ build/classes/*
 *.class
 
 /dist/
+/nbproject/
