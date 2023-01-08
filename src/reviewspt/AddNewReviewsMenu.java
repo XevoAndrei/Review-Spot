@@ -103,7 +103,6 @@ public class AddNewReviewsMenu extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("SUMMARY:");
 
-        tfSummary.setForeground(new java.awt.Color(255, 255, 255));
         tfSummary.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         tfSummary.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
