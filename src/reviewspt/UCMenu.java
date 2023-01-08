@@ -1,7 +1,6 @@
 package reviewspt;
 
 import java.util.HashMap;
-
 import javax.swing.JOptionPane;
 
 public class UCMenu extends javax.swing.JFrame {

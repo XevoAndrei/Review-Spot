@@ -1,13 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package reviewspt;
 
-/**
- *
- * @author siyah
- */
+import java.awt.Desktop;
+import java.net.URL;
+
 public class MPG3 extends javax.swing.JFrame {
 
     /**
@@ -30,17 +25,21 @@ public class MPG3 extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
+        mainWallpaper = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        steam = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        playstation = new javax.swing.JLabel();
+        xbox = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Tom Clancy's Rainbow Six: Siege Review");
         setResizable(false);
 
-        jButton1.setText("BACK");
+        jButton1.setText("HOME");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -48,7 +47,7 @@ public class MPG3 extends javax.swing.JFrame {
         });
 
         jLabel1.setFont(new java.awt.Font("Times New Roman", 0, 36)); // NOI18N
-        jLabel1.setText("RAINBOW 6");
+        jLabel1.setText("RAINBOW SIX: SIEGE");
 
         jTextArea1.setEditable(false);
         jTextArea1.setColumns(20);
@@ -58,23 +57,43 @@ public class MPG3 extends javax.swing.JFrame {
         jTextArea1.setText("In Rainbow Six Siege, small tactical choices always lead to big consequences. Every round is a new lesson in what you could have done better, with your mistakes acting as a stern teacher. Taking these lessons to heart and adjusting your team's strategy accordingly keeps each match feeling fresh and exciting, and a drip-feed of new operators, loadouts, and abilities constantly introduces new considerations. The thrill of seeing your plan succeed--whether that's a collection of traps that stops the enemy in their tracks, a well-placed breaching hole that sets the stage for an ambush, or two operators' abilities working together to pull the rug out from the opposing team--is what makes Siege not only a compelling shooter but one of the best examples of teamwork, tactics, and crack shooting out there.\n\nDespite its evolution over the past four years, Rainbow Six Siege has always been a battle between attackers and defenders over a single objective. There are five operators per team, each with their own special gadgets that can be used to slow the attackers' assault or poke holes in the defenders' fortifications. Every round, attackers need to move in on a specific objective; depending on the mode, they'll need to sneak in and extract a hostage, create a pathway to secure a specific room, or strategize carefully to defuse a bomb. Bomb is the quintessential Siege mode, as it makes every operator feel viable and balanced. Pushing the objective, finding an opening to plant the defuser, and then protecting said defuser gives the attacking side a steep, rewarding climb to victory, and it's the defenders' job to knock them down and keep them from reaching that summit.");
         jScrollPane1.setViewportView(jTextArea1);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/RainbowSixSiegeWallpaper.png"))); // NOI18N
-        jLabel2.setText("jLabel2");
+        mainWallpaper.setIcon(new javax.swing.ImageIcon(getClass().getResource("/RainbowSixSiegeWallpaper.png"))); // NOI18N
+        mainWallpaper.setText("jLabel2");
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/RainbowSixSiegePhoto3.jpg"))); // NOI18N
-        jLabel3.setText("jLabel3");
-
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/RainbowSixSiegePhoto1.jpg"))); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/r6wallpaper1.jpg"))); // NOI18N
         jLabel4.setText("jLabel3");
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/RainbowSixSiegePhoto2.jpg"))); // NOI18N
-        jLabel5.setText("jLabel3");
+        steam.setIcon(new javax.swing.ImageIcon(getClass().getResource("/steam.png"))); // NOI18N
+        steam.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                steamMouseClicked(evt);
+            }
+        });
 
-        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel6.setText("Standart Edition : 19.99$");
+        jLabel8.setFont(new java.awt.Font("sansserif", 3, 18)); // NOI18N
+        jLabel8.setText("AVAILABLE PLATFORMS:");
 
-        jLabel10.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel10.setText("Deluxe Edition : 29.99$");
+        playstation.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ps.png"))); // NOI18N
+        playstation.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                playstationMouseClicked(evt);
+            }
+        });
+
+        xbox.setIcon(new javax.swing.ImageIcon(getClass().getResource("/xbox.png"))); // NOI18N
+        xbox.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                xboxMouseClicked(evt);
+            }
+        });
+
+        jLabel9.setFont(new java.awt.Font("sansserif", 3, 18)); // NOI18N
+        jLabel9.setText("CATEGORY: Tactical FPS, Multiplayer");
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/r6meta.png"))); // NOI18N
+        jLabel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/r6ign.png"))); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -83,30 +102,43 @@ public class MPG3 extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(38, 38, 38)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 978, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel6)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel10)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(mainWallpaper, javax.swing.GroupLayout.PREFERRED_SIZE, 900, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jLabel8)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 599, Short.MAX_VALUE)
+                                    .addComponent(jButton1))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(steam)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(playstation)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(xbox)
+                                    .addGap(50, 50, 50)
+                                    .addComponent(jLabel9)))))
+                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 900, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(69, 69, 69))))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel3)
+                                .addContainerGap(41, Short.MAX_VALUE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jScrollPane1)
+                                .addGap(34, 34, 34))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabel2))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(138, 138, 138)
+                                .addComponent(jLabel1)))
+                        .addContainerGap())))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -114,24 +146,33 @@ public class MPG3 extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(mainWallpaper)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jLabel10))
-                        .addGap(12, 12, 12)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap())
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(playstation)
+                                    .addComponent(steam)
+                                    .addComponent(xbox)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(18, 18, 18)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                            .addComponent(jLabel9)
+                                            .addComponent(jButton1))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(jLabel8)
+                                .addGap(20, 20, 20)))
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 510, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 632, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 585, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton1)
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel2)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -144,9 +185,30 @@ public class MPG3 extends javax.swing.JFrame {
         setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+    private void steamMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_steamMouseClicked
+        try{
+            Desktop.getDesktop().browse(new URL("https://store.steampowered.com/app/359550/Tom_Clancys_Rainbow_Six_Siege/").toURI());
+        }
+        catch(Exception e)
+        {}
+    }//GEN-LAST:event_steamMouseClicked
+
+    private void playstationMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_playstationMouseClicked
+        try{
+            Desktop.getDesktop().browse(new URL("https://www.playstation.com/en-tr/games/tom-clancys-rainbow-six-siege/#buy-now").toURI());
+        }
+        catch(Exception e)
+        {}
+    }//GEN-LAST:event_playstationMouseClicked
+
+    private void xboxMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_xboxMouseClicked
+        try{
+            Desktop.getDesktop().browse(new URL("https://www.xbox.com/tr-TR/games/store/tom-clancys-rainbow-six-siege/c12t09dsvp8j").toURI());
+        }
+        catch(Exception e)
+        {}
+    }//GEN-LAST:event_xboxMouseClicked
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -197,13 +259,16 @@ public class MPG3 extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JLabel mainWallpaper;
+    private javax.swing.JLabel playstation;
+    private javax.swing.JLabel steam;
+    private javax.swing.JLabel xbox;
     // End of variables declaration//GEN-END:variables
 }

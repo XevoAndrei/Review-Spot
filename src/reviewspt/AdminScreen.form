@@ -104,18 +104,23 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="addNewModsButton" alignment="0" max="32767" attributes="0"/>
               <Group type="102" attributes="0">
-                  <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
-                  <Component id="jLabel2" min="-2" pref="220" max="-2" attributes="0"/>
-              </Group>
-              <Component id="addNewModsButton" min="-2" pref="270" max="-2" attributes="0"/>
-              <Component id="addNewRoleButton" min="-2" pref="270" max="-2" attributes="0"/>
-              <Component id="addNewGameButton" min="-2" pref="270" max="-2" attributes="0"/>
-              <Component id="manageModsButton" min="-2" pref="270" max="-2" attributes="0"/>
-              <Component id="manageGamesButton" min="-2" pref="270" max="-2" attributes="0"/>
-              <Group type="102" attributes="0">
-                  <EmptySpace min="100" pref="100" max="-2" attributes="0"/>
-                  <Component id="returnButton" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                          <Component id="jLabel2" min="-2" pref="220" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="addNewRoleButton" min="-2" pref="270" max="-2" attributes="0"/>
+                      <Component id="addNewGameButton" min="-2" pref="270" max="-2" attributes="0"/>
+                      <Component id="manageModsButton" min="-2" pref="270" max="-2" attributes="0"/>
+                      <Component id="manageGamesButton" min="-2" pref="270" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="100" pref="100" max="-2" attributes="0"/>
+                          <Component id="returnButton" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
