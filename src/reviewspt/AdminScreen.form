@@ -114,13 +114,14 @@
                       <Component id="addNewRoleButton" min="-2" pref="270" max="-2" attributes="0"/>
                       <Component id="addNewGameButton" min="-2" pref="270" max="-2" attributes="0"/>
                       <Component id="manageModsButton" min="-2" pref="270" max="-2" attributes="0"/>
-                      <Component id="manageGamesButton" min="-2" pref="270" max="-2" attributes="0"/>
                       <Group type="102" attributes="0">
                           <EmptySpace min="100" pref="100" max="-2" attributes="0"/>
                           <Component id="returnButton" min="-2" max="-2" attributes="0"/>
                       </Group>
+                      <Component id="manageGamesButton1" alignment="0" min="-2" pref="270" max="-2" attributes="0"/>
+                      <Component id="addNewReviewButton" alignment="0" min="-2" pref="270" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="12" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -137,9 +138,11 @@
                   <Component id="addNewGameButton" min="-2" pref="40" max="-2" attributes="0"/>
                   <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
                   <Component id="manageModsButton" min="-2" pref="40" max="-2" attributes="0"/>
-                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                  <Component id="manageGamesButton" min="-2" pref="40" max="-2" attributes="0"/>
-                  <EmptySpace min="70" pref="70" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="manageGamesButton1" min="-2" pref="40" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="addNewReviewButton" min="-2" pref="40" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                   <Component id="returnButton" min="-2" max="-2" attributes="0"/>
               </Group>
           </Group>
@@ -242,7 +245,24 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addNewGameButtonActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="manageGamesButton">
+        <Component class="javax.swing.JButton" name="addNewReviewButton">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Segoe UI" size="24" style="3"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Add New Reviews"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="addNewReviewButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="manageGamesButton1">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="0" red="0" type="rgb"/>
@@ -256,7 +276,7 @@
             <Property name="text" type="java.lang.String" value="Manage Games"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="manageGamesButtonActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="manageGamesButton1ActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

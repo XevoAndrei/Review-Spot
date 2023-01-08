@@ -19,7 +19,8 @@ public class AdminScreen extends javax.swing.JFrame {
         manageModsButton = new javax.swing.JButton();
         addNewRoleButton = new javax.swing.JButton();
         addNewGameButton = new javax.swing.JButton();
-        manageGamesButton = new javax.swing.JButton();
+        addNewReviewButton = new javax.swing.JButton();
+        manageGamesButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Admin Panel");
@@ -107,13 +108,23 @@ public class AdminScreen extends javax.swing.JFrame {
             }
         });
 
-        manageGamesButton.setBackground(new java.awt.Color(0, 0, 0));
-        manageGamesButton.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
-        manageGamesButton.setForeground(new java.awt.Color(255, 255, 255));
-        manageGamesButton.setText("Manage Games");
-        manageGamesButton.addActionListener(new java.awt.event.ActionListener() {
+        addNewReviewButton.setBackground(new java.awt.Color(0, 0, 0));
+        addNewReviewButton.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
+        addNewReviewButton.setForeground(new java.awt.Color(255, 255, 255));
+        addNewReviewButton.setText("Add New Reviews");
+        addNewReviewButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                manageGamesButtonActionPerformed(evt);
+                addNewReviewButtonActionPerformed(evt);
+            }
+        });
+
+        manageGamesButton1.setBackground(new java.awt.Color(0, 0, 0));
+        manageGamesButton1.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
+        manageGamesButton1.setForeground(new java.awt.Color(255, 255, 255));
+        manageGamesButton1.setText("Manage Games");
+        manageGamesButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                manageGamesButton1ActionPerformed(evt);
             }
         });
 
@@ -130,11 +141,12 @@ public class AdminScreen extends javax.swing.JFrame {
                     .addComponent(addNewRoleButton, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(addNewGameButton, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(manageModsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(manageGamesButton, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(100, 100, 100)
-                        .addComponent(returnButton)))
-                .addGap(0, 0, Short.MAX_VALUE))
+                        .addComponent(returnButton))
+                    .addComponent(manageGamesButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(addNewReviewButton, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 12, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -149,9 +161,11 @@ public class AdminScreen extends javax.swing.JFrame {
                 .addComponent(addNewGameButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
                 .addComponent(manageModsButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(manageGamesButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(70, 70, 70)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(manageGamesButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(addNewReviewButton, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(24, 24, 24)
                 .addComponent(returnButton))
         );
 
@@ -204,11 +218,15 @@ public class AdminScreen extends javax.swing.JFrame {
         setVisible(false);
     }//GEN-LAST:event_addNewGameButtonActionPerformed
 
-    private void manageGamesButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manageGamesButtonActionPerformed
-        ManageGamesMenu mgm = new ManageGamesMenu();
-        mgm.setVisible(true);
+    private void addNewReviewButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addNewReviewButtonActionPerformed
+        AddNewReviewsMenu arrm = new AddNewReviewsMenu();
+        arrm.setVisible(true);
         setVisible(false);
-    }//GEN-LAST:event_manageGamesButtonActionPerformed
+    }//GEN-LAST:event_addNewReviewButtonActionPerformed
+
+    private void manageGamesButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_manageGamesButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_manageGamesButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -248,12 +266,13 @@ public class AdminScreen extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addNewGameButton;
     private javax.swing.JButton addNewModsButton;
+    private javax.swing.JButton addNewReviewButton;
     private javax.swing.JButton addNewRoleButton;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JButton manageGamesButton;
+    private javax.swing.JButton manageGamesButton1;
     private javax.swing.JButton manageModsButton;
     private javax.swing.JButton returnButton;
     // End of variables declaration//GEN-END:variables
