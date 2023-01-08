@@ -7,12 +7,14 @@ import java.text.*;
 public class ManageGamesMenu extends javax.swing.JFrame {
     
     ArrayList<Game> games;
+    ArrayList<ReviewedGame> reviewedgames;
     DecimalFormat formatter;
     
 
     public ManageGamesMenu() {
-        /*initComponents();
+        initComponents();
         games = new ArrayList<Game>();
+        reviewedgames = new ArrayList<ReviewedGame>();
         formatter = new DecimalFormat("#,###.00");
         populateArrayList();
         
@@ -20,25 +22,48 @@ public class ManageGamesMenu extends javax.swing.JFrame {
         for (int i=0; i<games.size(); i++){
             gamesArray[i] = games.get(i).getGameName();
         }
-        cbGames.setModel(new javax.swing.DefaultComboBoxModel<>(gamesArray));
+        String [] reviewedgamesArray = new String[reviewedgames.size()];
+        for (int i=0; i<reviewedgames.size(); i++){
+            reviewedgamesArray[i] = reviewedgames.get(i).getReview();
+        }
+        cbGames.setModel(new javax.swing.DefaultComboBoxModel<>(reviewedgamesArray));
         cbGames.setSelectedIndex(0);
         }
     public void populateArrayList(){
         try {
-            FileInputStream fileRole = new FileInputStream("Games.dat");
-            ObjectInputStream inputFilegames = new ObjectInputStream(filegames);
+            FileInputStream fileGame = new FileInputStream("Game.dat");
+            ObjectInputStream inputFileGame = new ObjectInputStream(fileGame);
             
             boolean endOfFile = false;
             while (!endOfFile){
                 try {
-                    games.add((Game) inputFilegames.readObject());
+                    games.add((Game) inputFileGame.readObject());
                 } catch (EOFException e){
                     endOfFile = true;
                 } catch (Exception f) {
                     JOptionPane.showMessageDialog(null, f.getMessage());
                 }
             }
-            inputFilegames.close();            
+            inputFileGame.close();            
+        } catch (IOException e){
+            JOptionPane.showMessageDialog(null, e.getMessage());
+        }
+        
+        try {
+            FileInputStream fileReviewedGame = new FileInputStream("ReviewedGame.dat");
+            ObjectInputStream inputFileReviewedGame = new ObjectInputStream(fileReviewedGame);
+            
+            boolean endOfFile = false;
+            while (!endOfFile){
+                try {
+                    reviewedgames.add((ReviewedGame) inputFileReviewedGame.readObject());
+                } catch (EOFException e){
+                    endOfFile = true;
+                } catch (Exception f) {
+                    JOptionPane.showMessageDialog(null, f.getMessage());
+                }
+            }
+            inputFileReviewedGame.close();            
         } catch (IOException e){
             JOptionPane.showMessageDialog(null, e.getMessage());
         }
@@ -47,18 +72,18 @@ public class ManageGamesMenu extends javax.swing.JFrame {
     
     public void saveGamesToFile(){
         try {
-            FileOutputStream filegames = new FileOutputStream("Games.dat");
-            ObjectOutputStream outputFilegames = new ObjectOutputStream(filegames);
+            FileOutputStream fileReviewedGame = new FileOutputStream("ReviewedGame.dat");
+            ObjectOutputStream outputFileReviewedGame = new ObjectOutputStream(fileReviewedGame);
             
-            for (int i = 0; i<games.size(); i++){
-                outputFilegames.writeObject(games.get(i));
+            for (int i = 0; i<reviewedgames.size(); i++){
+                outputFileReviewedGame.writeObject(reviewedgames.get(i));
             }
-            outputFilegames.close();
+            outputFileReviewedGame.close();
             JOptionPane.showMessageDialog(null, "Games saved to the database.");
             this.dispose();
         } catch (IOException e){
             JOptionPane.showMessageDialog(null, e.getMessage());
-        }*/
+        }
     }
 
     @SuppressWarnings("unchecked")
@@ -212,18 +237,18 @@ public class ManageGamesMenu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void cbGamesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbGamesActionPerformed
-        /*int selectedIndexEmp = cbGames.getSelectedIndex();
-        tfModeratorUsername.setText(Moderators.get(selectedIndexEmp).getUsername());
+         int selectedIndexEmp = cbGames.getSelectedIndex();
+        tfGameName.setText(reviewedgames.get(selectedIndexEmp).getReview());
         
-        Role role = Moderators.get(selectedIndexEmp).getRole();
-        int empRoleIndex=0;
-        for (int i=0; i<roles.size(); i++){
-            if (roles.get(i).equals(role)){
-                empRoleIndex = i;
+        Game game = reviewedgames.get(selectedIndexEmp).getGame();
+        int empGameIndex=0;
+        for (int i=0; i<games.size(); i++){
+            if (games.get(i).equals(game)){
+                empGameIndex = i;
                 break;
             }                
         }
-        cbModeratorRole.setSelectedIndex(empRoleIndex);*/
+        cbGames.setSelectedIndex(empGameIndex);
     }//GEN-LAST:event_cbGamesActionPerformed
 
     /**

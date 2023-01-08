@@ -27,8 +27,6 @@ public class HomeScreen extends javax.swing.JFrame {
         jMenuBar3 = new javax.swing.JMenuBar();
         AdminPanel = new javax.swing.JMenu();
         loginScreen = new javax.swing.JMenuItem();
-        ModPanel = new javax.swing.JMenu();
-        loginScreen1 = new javax.swing.JMenuItem();
 
         jMenuItem1.setText("jMenuItem1");
 
@@ -175,18 +173,6 @@ public class HomeScreen extends javax.swing.JFrame {
 
         jMenuBar3.add(AdminPanel);
 
-        ModPanel.setText("Moderator Panel");
-
-        loginScreen1.setText("Login");
-        loginScreen1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                loginScreen1ActionPerformed(evt);
-            }
-        });
-        ModPanel.add(loginScreen1);
-
-        jMenuBar3.add(ModPanel);
-
         setJMenuBar(jMenuBar3);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -202,7 +188,7 @@ public class HomeScreen extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+            .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 481, Short.MAX_VALUE)
         );
 
         pack();
@@ -250,12 +236,6 @@ public class HomeScreen extends javax.swing.JFrame {
 
     }//GEN-LAST:event_loginScreenActionPerformed
 
-    private void loginScreen1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginScreen1ActionPerformed
-        ModLoginScreen mls = new ModLoginScreen();
-        mls.setVisible(true);
-        setVisible(false);
-    }//GEN-LAST:event_loginScreen1ActionPerformed
-
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -294,7 +274,6 @@ public class HomeScreen extends javax.swing.JFrame {
     private javax.swing.JButton HButton;
     private javax.swing.JButton IGButton;
     private javax.swing.JButton MPGButton;
-    private javax.swing.JMenu ModPanel;
     private javax.swing.JButton SPGButton;
     private javax.swing.JButton UCButton;
     private javax.swing.JLabel jLabel1;
@@ -308,6 +287,5 @@ public class HomeScreen extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JMenuItem loginScreen;
-    private javax.swing.JMenuItem loginScreen1;
     // End of variables declaration//GEN-END:variables
 }

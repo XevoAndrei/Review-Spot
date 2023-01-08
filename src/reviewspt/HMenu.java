@@ -122,7 +122,7 @@ public class HMenu extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jLabel6.setText("Our application goals to unite every aspect of game reviewing.");
+        jLabel6.setText("Our application goals to unite every aspect of game reviewing. Our admins hand-picked total of 11 games for introduction.");
 
         jPanel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 

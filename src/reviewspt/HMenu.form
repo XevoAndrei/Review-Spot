@@ -255,7 +255,7 @@
         </Container>
         <Component class="javax.swing.JLabel" name="jLabel6">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Our application goals to unite every aspect of game reviewing."/>
+            <Property name="text" type="java.lang.String" value="Our application goals to unite every aspect of game reviewing. Our admins hand-picked total of 11 games for introduction."/>
           </Properties>
         </Component>
         <Container class="javax.swing.JPanel" name="jPanel5">
